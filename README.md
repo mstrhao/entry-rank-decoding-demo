@@ -90,4 +90,4 @@ python -m pytest -q ../tests tests ordered-ring/test_ordered_ring.py bayesian-re
 
 ## License
 
-尚未指定许可证 / **No license has been designated.**
+本项目采用 [MIT License](LICENSE)。Copyright (c) 2026 Hao Zhou.

@@ -56,7 +56,7 @@ TG在外训练集内部另设内折，内验证其他目标标签仅用于contro
 
 ## Scope and license
 
-Synthetic data only. Six-location probabilities are conditional on mutually exclusive categories, not content-presence estimates or a model of simultaneous locations. 尚未指定许可证 / No license has been designated.
+Synthetic data only. Six-location probabilities are conditional on mutually exclusive categories, not content-presence estimates or a model of simultaneous locations. Licensed under the [MIT License](../LICENSE). Copyright (c) 2026 Hao Zhou.
 
 ## Reproducibility records
 

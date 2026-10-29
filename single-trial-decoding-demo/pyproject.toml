@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 name = "jointdecode-demo"
 version = "0.1.0"
 authors = [{name = "Hao Zhou"}]
+license = {text = "MIT"}
 description = "Simulation-only joint shared/private subspace probabilistic decoding"
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24", "scipy>=1.11", "scikit-learn>=1.4", "matplotlib>=3.7", "threadpoolctl>=3"]
