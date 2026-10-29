@@ -1,0 +1,142 @@
+{
+  "readouts": [
+    {
+      "class_means": {
+        "__array__": "root/readouts/0/class_means"
+      },
+      "covariance": {
+        "__array__": "root/readouts/0/covariance"
+      },
+      "cholesky": {
+        "__array__": "root/readouts/0/cholesky"
+      },
+      "logdet": -7.100905772645859,
+      "latent_mean": {
+        "__array__": "root/readouts/0/latent_mean"
+      },
+      "latent_scale": {
+        "__array__": "root/readouts/0/latent_scale"
+      },
+      "prior": {
+        "__array__": "root/readouts/0/prior"
+      },
+      "K": 6,
+      "shrinkage": 0.007128466036110779,
+      "eigenvalue_floor": 1e-08,
+      "raw_eigenvalues": {
+        "__array__": "root/readouts/0/raw_eigenvalues"
+      },
+      "n_floored_eigenvalues": 0,
+      "training_rows": 1440,
+      "class_counts": {
+        "__array__": "root/readouts/0/class_counts"
+      },
+      "equal_sample_weights": true
+    },
+    {
+      "class_means": {
+        "__array__": "root/readouts/1/class_means"
+      },
+      "covariance": {
+        "__array__": "root/readouts/1/covariance"
+      },
+      "cholesky": {
+        "__array__": "root/readouts/1/cholesky"
+      },
+      "logdet": -7.747227987233949,
+      "latent_mean": {
+        "__array__": "root/readouts/1/latent_mean"
+      },
+      "latent_scale": {
+        "__array__": "root/readouts/1/latent_scale"
+      },
+      "prior": {
+        "__array__": "root/readouts/1/prior"
+      },
+      "K": 6,
+      "shrinkage": 0.01872567952237337,
+      "eigenvalue_floor": 1e-08,
+      "raw_eigenvalues": {
+        "__array__": "root/readouts/1/raw_eigenvalues"
+      },
+      "n_floored_eigenvalues": 0,
+      "training_rows": 480,
+      "class_counts": {
+        "__array__": "root/readouts/1/class_counts"
+      },
+      "equal_sample_weights": true
+    },
+    {
+      "class_means": {
+        "__array__": "root/readouts/2/class_means"
+      },
+      "covariance": {
+        "__array__": "root/readouts/2/covariance"
+      },
+      "cholesky": {
+        "__array__": "root/readouts/2/cholesky"
+      },
+      "logdet": -7.605363511177303,
+      "latent_mean": {
+        "__array__": "root/readouts/2/latent_mean"
+      },
+      "latent_scale": {
+        "__array__": "root/readouts/2/latent_scale"
+      },
+      "prior": {
+        "__array__": "root/readouts/2/prior"
+      },
+      "K": 6,
+      "shrinkage": 0.02117009573259439,
+      "eigenvalue_floor": 1e-08,
+      "raw_eigenvalues": {
+        "__array__": "root/readouts/2/raw_eigenvalues"
+      },
+      "n_floored_eigenvalues": 0,
+      "training_rows": 480,
+      "class_counts": {
+        "__array__": "root/readouts/2/class_counts"
+      },
+      "equal_sample_weights": true
+    },
+    {
+      "class_means": {
+        "__array__": "root/readouts/3/class_means"
+      },
+      "covariance": {
+        "__array__": "root/readouts/3/covariance"
+      },
+      "cholesky": {
+        "__array__": "root/readouts/3/cholesky"
+      },
+      "logdet": -7.7153656081577076,
+      "latent_mean": {
+        "__array__": "root/readouts/3/latent_mean"
+      },
+      "latent_scale": {
+        "__array__": "root/readouts/3/latent_scale"
+      },
+      "prior": {
+        "__array__": "root/readouts/3/prior"
+      },
+      "K": 6,
+      "shrinkage": 0.019256681065962733,
+      "eigenvalue_floor": 1e-08,
+      "raw_eigenvalues": {
+        "__array__": "root/readouts/3/raw_eigenvalues"
+      },
+      "n_floored_eigenvalues": 0,
+      "training_rows": 480,
+      "class_counts": {
+        "__array__": "root/readouts/3/class_counts"
+      },
+      "equal_sample_weights": true
+    }
+  ],
+  "train_indices": {
+    "__array__": "root/train_indices"
+  },
+  "test_indices": {
+    "__array__": "root/test_indices"
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "methods": [
+    "Logistic",
+    "Gaussian Bayes"
+  ],
+  "shape": [
+    4,
+    6,
+    600,
+    180
+  ],
+  "windows": [
+    {
+      "name": "Entry / T1",
+      "component": 0,
+      "target": 1,
+      "window": [
+        1.2,
+        1.6
+      ],
+      "methods": {
+        "Logistic": {
+          "accuracy": 0.9029166666666667,
+          "nll": 0.28171118087807556,
+          "brier": 0.13972717939345344,
+          "entropy": 0.4030625133167615,
+          "true_probability": 0.8260818275600165,
+          "balanced_accuracy": 0.9029166666666666,
+          "ece": 0.05463344215574317,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "Gaussian Bayes": {
+          "accuracy": 0.9094444444444444,
+          "nll": 0.5945581180715132,
+          "brier": 0.156541960113072,
+          "entropy": 0.051362039090287685,
+          "true_probability": 0.9065258913151392,
+          "balanced_accuracy": 0.9094444444444445,
+          "ece": 0.0691870422075618,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        }
+      },
+      "bayes_minus_logistic": {
+        "balanced_accuracy": 0.00652777777777791,
+        "accuracy": 0.006527777777777688,
+        "nll": 0.3128469371934376,
+        "brier": 0.01681478071961856,
+        "ece": 0.014553600051818633,
+        "entropy": -0.3517004742264738,
+        "true_probability": 0.0804440637551227
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": 0.0023576388888888865,
+          "upper": 0.010420138888888887,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": 0.24149864053236642,
+          "upper": 0.38563996522668714,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": 0.0078546919858052,
+          "upper": 0.02504440206699326,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": 0.0027456288205988354,
+          "upper": 0.01031747509858062,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      },
+      "total_variation_mean": 0.13353790700634202,
+      "jensen_shannon_nats_mean": 0.04982299873969694
+    },
+    {
+      "name": "Entry / T2",
+      "component": 0,
+      "target": 2,
+      "window": [
+        2.5,
+        2.9
+      ],
+      "methods": {
+        "Logistic": {
+          "accuracy": 0.903611111111111,
+          "nll": 0.2798798203017879,
+          "brier": 0.14084442613409032,
+          "entropy": 0.40947441395368417,
+          "true_probability": 0.8236831647398678,
+          "balanced_accuracy": 0.9036111111111111,
+          "ece": 0.05833495577084582,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "Gaussian Bayes": {
+          "accuracy": 0.9040277777777778,
+          "nll": 0.5278007828993052,
+          "brier": 0.160337031333094,
+          "entropy": 0.056825902206340366,
+          "true_probability": 0.9028758075748857,
+          "balanced_accuracy": 0.9040277777777779,
+          "ece": 0.07222519295872999,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        }
+      },
+      "bayes_minus_logistic": {
+        "balanced_accuracy": 0.0004166666666667318,
+        "accuracy": 0.0004166666666667318,
+        "nll": 0.24792096259751734,
+        "brier": 0.01949260519900367,
+        "ece": 0.013890237187884173,
+        "entropy": -0.3526485117473438,
+        "true_probability": 0.07919264283501792
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": -0.004027777777777775,
+          "upper": 0.004864583333333332,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": 0.1927199431123638,
+          "upper": 0.31138246900190825,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": 0.010783748309534604,
+          "upper": 0.029079034436740914,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": -0.004009160503207325,
+          "upper": 0.004866588692961883,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      },
+      "total_variation_mean": 0.13545298606594147,
+      "jensen_shannon_nats_mean": 0.05038947720632653
+    },
+    {
+      "name": "Entry / T3",
+      "component": 0,
+      "target": 3,
+      "window": [
+        3.8,
+        4.2
+      ],
+      "methods": {
+        "Logistic": {
+          "accuracy": 0.907638888888889,
+          "nll": 0.26889032160151377,
+          "brier": 0.13495110577514582,
+          "entropy": 0.3981148464439517,
+          "true_probability": 0.82908379844378,
+          "balanced_accuracy": 0.907638888888889,
+          "ece": 0.058568714785259504,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "Gaussian Bayes": {
+          "accuracy": 0.909861111111111,
+          "nll": 0.5233888806950915,
+          "brier": 0.15041959738590377,
+          "entropy": 0.05367397666565833,
+          "true_probability": 0.908853927199975,
+          "balanced_accuracy": 0.9098611111111111,
+          "ece": 0.06789659251249006,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        }
+      },
+      "bayes_minus_logistic": {
+        "balanced_accuracy": 0.0022222222222221255,
+        "accuracy": 0.0022222222222220145,
+        "nll": 0.2544985590935777,
+        "brier": 0.015468491610757945,
+        "ece": 0.009327877727230552,
+        "entropy": -0.34444086977829336,
+        "true_probability": 0.07977012875619505
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": -0.001947916666666668,
+          "upper": 0.00611111111111111,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": 0.19292874765847132,
+          "upper": 0.3213441139943344,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": 0.007542209963942238,
+          "upper": 0.02454908330198283,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": -0.0019067632854046458,
+          "upper": 0.0060207556995256345,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      },
+      "total_variation_mean": 0.13209936374401354,
+      "jensen_shannon_nats_mean": 0.0487993685241462
+    },
+    {
+      "name": "Rank / T1",
+      "component": 1,
+      "target": 1,
+      "window": [
+        4.5,
+        5.5
+      ],
+      "methods": {
+        "Logistic": {
+          "accuracy": 0.9957777777777779,
+          "nll": 0.13647333764583583,
+          "brier": 0.039632383214348595,
+          "entropy": 0.40018170246840606,
+          "true_probability": 0.8787311415371349,
+          "balanced_accuracy": 0.9957777777777777,
+          "ece": 0.11629354697340306,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "Gaussian Bayes": {
+          "accuracy": 0.9995,
+          "nll": 0.0012496094100191246,
+          "brier": 0.0006749897777529973,
+          "entropy": 0.0006800125993340024,
+          "true_probability": 0.9994707311234172,
+          "balanced_accuracy": 0.9994999999999999,
+          "ece": 0.00029618062310083785,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        }
+      },
+      "bayes_minus_logistic": {
+        "balanced_accuracy": 0.0037222222222222934,
+        "accuracy": 0.0037222222222221824,
+        "nll": -0.13522372823581671,
+        "brier": -0.0389573934365956,
+        "ece": -0.11599736635030222,
+        "entropy": -0.3995016898690721,
+        "true_probability": 0.12073958958628228
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": 0.0019999999999999996,
+          "upper": 0.005668055555555554,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": -0.14117785970847796,
+          "upper": -0.12955628118737703,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": -0.042353718112031806,
+          "upper": -0.03586550921273047,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": 0.0020087912137119065,
+          "upper": 0.005686336870884045,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      },
+      "total_variation_mean": 0.12096100571994652,
+      "jensen_shannon_nats_mean": 0.045281838625613885
+    },
+    {
+      "name": "Rank / T2",
+      "component": 2,
+      "target": 2,
+      "window": [
+        4.5,
+        5.5
+      ],
+      "methods": {
+        "Logistic": {
+          "accuracy": 0.9953888888888889,
+          "nll": 0.13988483188626086,
+          "brier": 0.04094567396020415,
+          "entropy": 0.40824178773813896,
+          "true_probability": 0.8758014270103981,
+          "balanced_accuracy": 0.9953888888888889,
+          "ece": 0.11879389620321783,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "Gaussian Bayes": {
+          "accuracy": 0.9990000000000001,
+          "nll": 0.004994654889379666,
+          "brier": 0.0017899949013188239,
+          "entropy": 0.000888946897013425,
+          "true_probability": 0.998849628128465,
+          "balanced_accuracy": 0.999,
+          "ece": 0.0007197747269395725,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        }
+      },
+      "bayes_minus_logistic": {
+        "balanced_accuracy": 0.0036111111111111205,
+        "accuracy": 0.0036111111111112315,
+        "nll": -0.1348901769968812,
+        "brier": -0.039155679058885326,
+        "ece": -0.11807412147627826,
+        "entropy": -0.40735284084112555,
+        "true_probability": 0.12304820111806691
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": 0.0019430555555555553,
+          "upper": 0.005499999999999999,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": -0.14133877704602038,
+          "upper": -0.12877184268810862,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": -0.04241616872696125,
+          "upper": -0.036269793528563694,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": 0.0019500652601827048,
+          "upper": 0.005421629598944021,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      },
+      "total_variation_mean": 0.12363809527302555,
+      "jensen_shannon_nats_mean": 0.046252772681364525
+    },
+    {
+      "name": "Rank / T3",
+      "component": 3,
+      "target": 3,
+      "window": [
+        4.5,
+        5.5
+      ],
+      "methods": {
+        "Logistic": {
+          "accuracy": 0.9945555555555555,
+          "nll": 0.14190689995516317,
+          "brier": 0.04220247749454847,
+          "entropy": 0.41005031536757097,
+          "true_probability": 0.8743046521005874,
+          "balanced_accuracy": 0.9945555555555555,
+          "ece": 0.11943000476393607,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "Gaussian Bayes": {
+          "accuracy": 0.9986666666666667,
+          "nll": 0.005534956269424517,
+          "brier": 0.0023548534691875656,
+          "entropy": 0.0010804212694176698,
+          "true_probability": 0.9985008988182998,
+          "balanced_accuracy": 0.9986666666666668,
+          "ece": 0.0010101334321326232,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        }
+      },
+      "bayes_minus_logistic": {
+        "balanced_accuracy": 0.0041111111111112875,
+        "accuracy": 0.0041111111111111764,
+        "nll": -0.13637194368573866,
+        "brier": -0.0398476240253609,
+        "ece": -0.11841987133180346,
+        "entropy": -0.4089698940981533,
+        "true_probability": 0.12419624671771246
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": 0.002499999999999999,
+          "upper": 0.0060555555555555545,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": -0.1427960852267806,
+          "upper": -0.12963799399733672,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": -0.04332413137948683,
+          "upper": -0.03646402659042513,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": 0.002451973849122371,
+          "upper": 0.006049187082511008,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      },
+      "total_variation_mean": 0.12503990308312338,
+      "jensen_shannon_nats_mean": 0.046816551509902826
+    }
+  ],
+  "definitions": {
+    "evaluation": "Per-frame score before equal trial/time averaging; only prespecified target-present windows",
+    "balanced_accuracy": "Mean class recall; pooled trial-frame predictions within each window",
+    "nll": "Mean negative log true-class posterior in natural-log units; from log-domain values, not clipped probabilities",
+    "brier": "Mean sum over all K classes of (probability - onehot)^2; range 0..2",
+    "ece": "Top-label confidence ECE: 10 equal-width bins [b/10,(b+1)/10), last includes 1; pooled correlated trial-frames, no independence claim",
+    "entropy": "Mean -sum p log p, natural-log units; not animal confidence",
+    "total_variation": "0.5 sum_k |p_Bayes-p_logistic|; range 0..1; label-free",
+    "jensen_shannon": "0.5 KL(p_logistic||m)+0.5 KL(p_Bayes||m), m=(p_logistic+p_Bayes)/2; natural-log units",
+    "bootstrap": "1000 paired resamples of entire trials, seed 2026, same index matrix across both methods and every window; percentile 95% CI on Bayes-minus-logistic. Conditional on this simulation and fixed fitted OOF models; no retraining, no animal/generalization inference, no multiple-comparison significance claim",
+    "display": "Fixed original row/trial 0; heatmaps 0.2..1 (values below .2 bottom color), numerical outputs unchanged; all other plots use their own metric scales"
+  }
+}

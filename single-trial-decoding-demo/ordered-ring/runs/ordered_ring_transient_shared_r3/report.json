@@ -1,0 +1,583 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 13.460838997000337,
+  "shape": [
+    4,
+    6,
+    600,
+    180
+  ],
+  "window_metrics": [
+    {
+      "target": 1,
+      "space": "Entry",
+      "window": [
+        1.2,
+        1.6
+      ],
+      "balanced_accuracy": 0.9029166666666666,
+      "true_probability": 0.8260818275600164
+    },
+    {
+      "target": 1,
+      "space": "Rank",
+      "window": [
+        4.5,
+        5.5
+      ],
+      "balanced_accuracy": 0.9957777777777778,
+      "true_probability": 0.8787311415371348
+    },
+    {
+      "target": 2,
+      "space": "Entry",
+      "window": [
+        2.5,
+        2.9
+      ],
+      "balanced_accuracy": 0.903611111111111,
+      "true_probability": 0.8236831647398678
+    },
+    {
+      "target": 2,
+      "space": "Rank",
+      "window": [
+        4.5,
+        5.5
+      ],
+      "balanced_accuracy": 0.995388888888889,
+      "true_probability": 0.8758014270103981
+    },
+    {
+      "target": 3,
+      "space": "Entry",
+      "window": [
+        3.8,
+        4.2
+      ],
+      "balanced_accuracy": 0.9076388888888888,
+      "true_probability": 0.8290837984437801
+    },
+    {
+      "target": 3,
+      "space": "Rank",
+      "window": [
+        4.5,
+        5.5
+      ],
+      "balanced_accuracy": 0.9945555555555555,
+      "true_probability": 0.8743046521005875
+    }
+  ],
+  "outer_converged": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "profile_optimizers_success": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "readouts_converged": [
+    [
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      true
+    ]
+  ],
+  "folded_max_error": 1.4210854715202004e-14,
+  "probability_sum_max_error": 6.661338147750939e-16,
+  "oof_exactly_once": true,
+  "recovery": [
+    {
+      "fold": 0,
+      "learned_space": 0,
+      "truth_source": 0,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 6.824761077518172,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9984525946643951,
+      "estimated_span_truth_energy_capture": 0.9981745664208489,
+      "truth_span_estimated_energy_capture": 0.9969716648499704,
+      "projector_distance": 0.6554501078417774,
+      "principal_angles_degrees": [
+        2.617789090102966,
+        2.26788207987963
+      ],
+      "projection_relative_error": 0.04272509308534159,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 0
+    },
+    {
+      "fold": 0,
+      "learned_space": 1,
+      "truth_source": 1,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 10.463974832436243,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9977785184897949,
+      "estimated_span_truth_energy_capture": 0.9980951829451746,
+      "truth_span_estimated_energy_capture": 0.9956396485392972,
+      "projector_distance": 0.655483642094386,
+      "principal_angles_degrees": [
+        2.828161854900066,
+        2.122219646583741
+      ],
+      "projection_relative_error": 0.04364420986597615,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 1
+    },
+    {
+      "fold": 0,
+      "learned_space": 2,
+      "truth_source": 2,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 8.396117366935844,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9979331889367505,
+      "estimated_span_truth_energy_capture": 0.9983385283039811,
+      "truth_span_estimated_energy_capture": 0.9959657628959514,
+      "projector_distance": 0.655379771465633,
+      "principal_angles_degrees": [
+        2.5421121159733726,
+        2.115004171513927
+      ],
+      "projection_relative_error": 0.04076115425278012,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 2
+    },
+    {
+      "fold": 0,
+      "learned_space": 3,
+      "truth_source": 3,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 5.61406896105138,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9959937619308035,
+      "estimated_span_truth_energy_capture": 0.9963322246402928,
+      "truth_span_estimated_energy_capture": 0.9920926230705084,
+      "projector_distance": 0.6562514978222029,
+      "principal_angles_degrees": [
+        3.5974313736894867,
+        3.3398641779281024
+      ],
+      "projection_relative_error": 0.0605621611215055,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 3
+    },
+    {
+      "fold": 1,
+      "learned_space": 0,
+      "truth_source": 0,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 6.824761077518172,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9986097236905883,
+      "estimated_span_truth_energy_capture": 0.9984495882894191,
+      "truth_span_estimated_energy_capture": 0.9972879400922445,
+      "projector_distance": 0.6553303958444181,
+      "principal_angles_degrees": [
+        2.552332335493677,
+        1.9175499460636303
+      ],
+      "projection_relative_error": 0.0393752677524979,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 0
+    },
+    {
+      "fold": 1,
+      "learned_space": 1,
+      "truth_source": 1,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 10.463974832436243,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9976819308493166,
+      "estimated_span_truth_energy_capture": 0.9982238059810077,
+      "truth_span_estimated_energy_capture": 0.9954568442779136,
+      "projector_distance": 0.6554276028282917,
+      "principal_angles_degrees": [
+        2.5761640911051082,
+        2.2405578320857256
+      ],
+      "projection_relative_error": 0.04214491688201931,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 1
+    },
+    {
+      "fold": 1,
+      "learned_space": 2,
+      "truth_source": 2,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 8.396117366935844,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9978640319549222,
+      "estimated_span_truth_energy_capture": 0.9983144824114992,
+      "truth_span_estimated_energy_capture": 0.9958112428790651,
+      "projector_distance": 0.6553890870865232,
+      "principal_angles_degrees": [
+        2.5339074387632206,
+        2.157614866672441
+      ],
+      "projection_relative_error": 0.041055055577855125,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 2
+    },
+    {
+      "fold": 1,
+      "learned_space": 3,
+      "truth_source": 3,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 5.61406896105138,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9960211140859788,
+      "estimated_span_truth_energy_capture": 0.9959594383502435,
+      "truth_span_estimated_energy_capture": 0.9921551217738936,
+      "projector_distance": 0.6564136991887246,
+      "principal_angles_degrees": [
+        4.093434796234108,
+        3.1296911831913543
+      ],
+      "projection_relative_error": 0.06356541236990856,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 3
+    },
+    {
+      "fold": 2,
+      "learned_space": 0,
+      "truth_source": 0,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 6.824761077518172,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.998661849935561,
+      "estimated_span_truth_energy_capture": 0.9985218992735998,
+      "truth_span_estimated_energy_capture": 0.9973833776898603,
+      "projector_distance": 0.6552985607707179,
+      "principal_angles_degrees": [
+        2.328547712098926,
+        2.0709983752173913
+      ],
+      "projection_relative_error": 0.03844607556565689,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 0
+    },
+    {
+      "fold": 2,
+      "learned_space": 1,
+      "truth_source": 1,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 10.463974832436243,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9978301103374249,
+      "estimated_span_truth_energy_capture": 0.9982725482161648,
+      "truth_span_estimated_energy_capture": 0.9957179398800633,
+      "projector_distance": 0.6554058613968313,
+      "principal_angles_degrees": [
+        2.6424452860296945,
+        2.0848473540782466
+      ],
+      "projection_relative_error": 0.04156262484294218,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 1
+    },
+    {
+      "fold": 2,
+      "learned_space": 2,
+      "truth_source": 2,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 8.396117366935844,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9979610096672401,
+      "estimated_span_truth_energy_capture": 0.998474567511137,
+      "truth_span_estimated_energy_capture": 0.9960593827065402,
+      "projector_distance": 0.6553193785465915,
+      "principal_angles_degrees": [
+        2.365922706081254,
+        2.10413573250555
+      ],
+      "projection_relative_error": 0.039056785439447704,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 2
+    },
+    {
+      "fold": 2,
+      "learned_space": 3,
+      "truth_source": 3,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 5.61406896105138,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.995668964665364,
+      "estimated_span_truth_energy_capture": 0.9957753651632276,
+      "truth_span_estimated_energy_capture": 0.9914786805358492,
+      "projector_distance": 0.6564945193998931,
+      "principal_angles_degrees": [
+        4.0409480244604135,
+        3.382781871468498
+      ],
+      "projection_relative_error": 0.06499719099139883,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 3
+    },
+    {
+      "fold": 3,
+      "learned_space": 0,
+      "truth_source": 0,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 6.824761077518172,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9985825828158762,
+      "estimated_span_truth_energy_capture": 0.9984515726789531,
+      "truth_span_estimated_energy_capture": 0.9972443032459067,
+      "projector_distance": 0.655329188407759,
+      "principal_angles_degrees": [
+        2.4124579862026754,
+        2.0863707995903202
+      ],
+      "projection_relative_error": 0.03935006125848948,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 0
+    },
+    {
+      "fold": 3,
+      "learned_space": 1,
+      "truth_source": 1,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 10.463974832436243,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9979972239747489,
+      "estimated_span_truth_energy_capture": 0.9982901292346655,
+      "truth_span_estimated_energy_capture": 0.996062042130343,
+      "projector_distance": 0.6553972033443272,
+      "principal_angles_degrees": [
+        2.725699586943013,
+        1.9415065167129617
+      ],
+      "projection_relative_error": 0.041350583615403357,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 1
+    },
+    {
+      "fold": 3,
+      "learned_space": 2,
+      "truth_source": 2,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 8.396117366935844,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9979968227467128,
+      "estimated_span_truth_energy_capture": 0.9984604075468579,
+      "truth_span_estimated_energy_capture": 0.9960554774127635,
+      "projector_distance": 0.6553252488095314,
+      "principal_angles_degrees": [
+        2.3147216255220155,
+        2.1807066013833527
+      ],
+      "projection_relative_error": 0.039237640769318155,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 2
+    },
+    {
+      "fold": 3,
+      "learned_space": 3,
+      "truth_source": 3,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 5.61406896105138,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9962760936465761,
+      "estimated_span_truth_energy_capture": 0.9963261818591296,
+      "truth_span_estimated_energy_capture": 0.9927272918131276,
+      "projector_distance": 0.6562550630807971,
+      "principal_angles_degrees": [
+        3.713151484893906,
+        3.2191680062665697
+      ],
+      "projection_relative_error": 0.06061202967126593,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 3
+    },
+    {
+      "fold": 4,
+      "learned_space": 0,
+      "truth_source": 0,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 6.824761077518172,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9984749709382682,
+      "estimated_span_truth_energy_capture": 0.9982739468446385,
+      "truth_span_estimated_energy_capture": 0.997024525752036,
+      "projector_distance": 0.6554065212858631,
+      "principal_angles_degrees": [
+        2.6008649515962174,
+        2.138795881620279
+      ],
+      "projection_relative_error": 0.04154579588070797,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 0
+    },
+    {
+      "fold": 4,
+      "learned_space": 1,
+      "truth_source": 1,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 10.463974832436243,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9977503683014649,
+      "estimated_span_truth_energy_capture": 0.9981580648193858,
+      "truth_span_estimated_energy_capture": 0.9955672127141734,
+      "projector_distance": 0.6554566374428402,
+      "principal_angles_degrees": [
+        2.7298505982251124,
+        2.1547034140831918
+      ],
+      "projection_relative_error": 0.04291777231653749,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 1
+    },
+    {
+      "fold": 4,
+      "learned_space": 2,
+      "truth_source": 2,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 8.396117366935844,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.998020324740622,
+      "estimated_span_truth_energy_capture": 0.9984030634556597,
+      "truth_span_estimated_energy_capture": 0.9961552116819327,
+      "projector_distance": 0.655350773549659,
+      "principal_angles_degrees": [
+        2.4729859697419947,
+        2.093485769485612
+      ],
+      "projection_relative_error": 0.03996168845707528,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 2
+    },
+    {
+      "fold": 4,
+      "learned_space": 3,
+      "truth_source": 3,
+      "source_active": true,
+      "target_present": true,
+      "gain_norm": 5.61406896105138,
+      "estimated_rank": 5,
+      "truth_rank": 2,
+      "status": "available",
+      "signed_template_cosine": 0.9957982732033802,
+      "estimated_span_truth_energy_capture": 0.9958169199040927,
+      "truth_span_estimated_energy_capture": 0.9917456448676172,
+      "projector_distance": 0.6564773291412396,
+      "principal_angles_degrees": [
+        3.9524077047903967,
+        3.448243510888275
+      ],
+      "projection_relative_error": 0.06467673535288626,
+      "angles_cover_matched_directions_only": true,
+      "unused_basis_alignment": null,
+      "space": 3
+    }
+  ]
+}

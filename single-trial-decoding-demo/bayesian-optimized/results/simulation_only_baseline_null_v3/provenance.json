@@ -1,0 +1,502 @@
+{
+  "method": "frame_matched_gaussian_plus_baseline_null_v1",
+  "source_run": "ordered_ring_transient_shared_r3",
+  "prior_content": 0.5,
+  "source_sha256": {
+    "upstream/config.json": "01c1dbfb5911c418670582136bd2c37d814c26c449501419682b22ba4c443778",
+    "upstream/simulation_inputs.npz": "3a56645f1b59c33d485ce8210dacf34919e4421832d04943f446e37dd02029d9",
+    "baseline/comparison_oof.npz": "0431ec0d32c7c5548641926a8ea2193f8ee68b4d8521878660bf54f59351d746",
+    "upstream/fold_0.json": "a76e888cfac9794c000c3a693946a32a59118a00de616e15ead88425bde8d07a",
+    "upstream/fold_0.npz": "907e8a66ba44f2b47e59a14ce08dd6d33b9a6c704fd77d09576fdbd14dbed41c",
+    "upstream/fold_1.json": "4338be6e5c8888bf0413790f4bfe583f105c8c641b154af301b28ade3085e7d1",
+    "upstream/fold_1.npz": "621100c62f48a5bc476d3cf13eac2279847b8129a0eb53cf759105bc9d6c9306",
+    "upstream/fold_2.json": "ac199a88dc974725b521ee5bc100f69517934421be0b007b315266c7814b06b5",
+    "upstream/fold_2.npz": "457d369995a5fe9765182e2c26d22b616589873722582fb0f39f26afcf18504a",
+    "upstream/fold_3.json": "9eed429e6ad63f567af391de9ff30343feca6571e76e8034249d59b7c4c6fe69",
+    "upstream/fold_3.npz": "1c23eda30263d1488f4555f8a22d87a19956d9650d28c06e7f8826c9168a297d",
+    "upstream/fold_4.json": "5b5b96df41251a60a9248e534c03c877ddff4ff59ed867b1ad54891db3b001b1",
+    "upstream/fold_4.npz": "d3ab85a2850e2f091ba661c803022535b368af29b43830b8194701863540c3ec",
+    "baseline/gaussian_fold_0.json": "7ffe2af017ac0e1a182970c673c9d08ad98f6c78f02a6f0c3c2a1ff663477738",
+    "baseline/gaussian_fold_0.npz": "10dbd9a87def53d0228d79802fc46a53c923ec650fdf5205ec8e1395b35e33a2",
+    "baseline/gaussian_fold_1.json": "9391151813ba3a9bfa5371f448323cf37081443204b0797f764e86ac761b0790",
+    "baseline/gaussian_fold_1.npz": "1a86a7a7e166b814ade752fd5b08abf4790d1b5c6bf988154c89e0a384c28bd9",
+    "baseline/gaussian_fold_2.json": "dc6fa6a29bce6faf5c61a524e1a34dc85d24343b4d9e1060b8bd4dc110d490cf",
+    "baseline/gaussian_fold_2.npz": "cd4021d11a656c4e2b9143490aa6d8c8d7d1036afc7e25d186e713c206058cf5",
+    "baseline/gaussian_fold_3.json": "149ed4ff6d77d2137a33bc215f1f9a9398719da4fa81f12a181ea63e464b4f7c",
+    "baseline/gaussian_fold_3.npz": "773e9ddf61666cd600a7c3f450111e758f1087d09b7abd12f82ab4203924ef33",
+    "baseline/gaussian_fold_4.json": "2e4066fa57cc5d56a048436007efd1f77fec1179083fd44019bc722a8c0b4358",
+    "baseline/gaussian_fold_4.npz": "a92f4f73d24c634fc8d1f2fe0c883375d319ab3ca4041ccfd64f5b6d7b9f6850"
+  },
+  "source_unchanged": true,
+  "script_sha256": {
+    "run_calibrated.py": "9b01b6b57435d801303d50309b8d6c94621fd012c957979f09b0618b86977859",
+    "test_evaluation_calibrated.py": "682950c8b2246a73940c2c1bd9595b5fee723020ef99432aadaa285f7376b00b",
+    "noise_matched.py": "82320eea0beabeecc578a6acfe7996e3de61bb6f7542e023e9e63b709cab14f4",
+    "evaluate_optimized.py": "833ace81229a4befca81832bfc6f90bc7a5a7dc184e4f27dd26bd0025b6bfa11",
+    "calibrated_readout.py": "ca1ce5bc661e64c872916f362b54d20a262ee89d3981bb4aa738001c76714b69",
+    "evaluate_calibrated.py": "9a91b75cd624091e86bb34db13a19a11f0182f6d4a495c5844f61b414865d8d1",
+    "test_noise_matched.py": "1e199bd0df7df1d43bfc0fff758e19ee875e39b4e25cc603aa75fab99c7d0e0c",
+    "test_calibrated.py": "519f6a294dfbb88a9d47e0726a5d29cea5ed107ac21faa97cbde3800f47d2354",
+    "test_evaluation_optimized.py": "6f492e3548648d2a4c0d3b76b2172e03fbd8d5256b4418ca99572c9edc5c04ac",
+    "run_optimized.py": "962b8028baf658f1f203dbd6153cd344c9e9b404fc03782c8c62d64b2839ee64"
+  },
+  "source_commit": "7b9fac5fc2199a1859bf6a8c2f853653d463b3b3",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "outer_folds": [
+    {
+      "fold": 0,
+      "class_mean_difference_vs_windowmean": [
+        2.4424906541753444e-15,
+        1.9984014443252818e-15,
+        4.218847493575595e-15,
+        4.218847493575595e-15
+      ],
+      "thresholds": [
+        0.04498101771135235,
+        1.0766616980877476e-07,
+        2.2281922900553921e-07,
+        1.941619226338649e-07
+      ],
+      "calibration": [
+        {
+          "threshold": 0.04498101771135235,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 1.0766616980877476e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 2.2281922900553921e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 1.941619226338649e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        }
+      ],
+      "content_training_rows": [
+        17280,
+        14400,
+        14400,
+        14400
+      ],
+      "null_training_rows": [
+        7200,
+        7200,
+        7200,
+        7200
+      ],
+      "content_shrinkage": [
+        0.0012046977341063168,
+        0.0006832292068066593,
+        0.0007305663334915113,
+        0.0006963746318481825
+      ],
+      "null_shrinkage": [
+        0.0016525492352645194,
+        0.0015124334057535548,
+        0.001693449718459598,
+        0.0015313502132608626
+      ],
+      "content_n_floored": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "null_n_floored": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 1,
+      "class_mean_difference_vs_windowmean": [
+        3.552713678800501e-15,
+        3.3306690738754696e-15,
+        1.7763568394002505e-15,
+        2.3314683517128287e-15
+      ],
+      "thresholds": [
+        0.05447238710459041,
+        8.757393614881403e-08,
+        1.5595525797702177e-07,
+        1.2069584862900202e-07
+      ],
+      "calibration": [
+        {
+          "threshold": 0.05447238710459041,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 8.757393614881403e-08,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 1.5595525797702177e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 1.2069584862900202e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        }
+      ],
+      "content_training_rows": [
+        17280,
+        14400,
+        14400,
+        14400
+      ],
+      "null_training_rows": [
+        7200,
+        7200,
+        7200,
+        7200
+      ],
+      "content_shrinkage": [
+        0.0012034000072900348,
+        0.0006898775792687746,
+        0.0007136197564219384,
+        0.0007692262883121817
+      ],
+      "null_shrinkage": [
+        0.0016371187237044429,
+        0.001570091756290443,
+        0.0015986212464978362,
+        0.001689873481583692
+      ],
+      "content_n_floored": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "null_n_floored": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 2,
+      "class_mean_difference_vs_windowmean": [
+        3.1086244689504383e-15,
+        3.1086244689504383e-15,
+        2.6645352591003757e-15,
+        2.6645352591003757e-15
+      ],
+      "thresholds": [
+        0.0504401808415588,
+        1.832945175821481e-07,
+        2.4938107156928073e-07,
+        1.5877397909185058e-07
+      ],
+      "calibration": [
+        {
+          "threshold": 0.0504401808415588,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 1.832945175821481e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 2.4938107156928073e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 1.5877397909185058e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        }
+      ],
+      "content_training_rows": [
+        17280,
+        14400,
+        14400,
+        14400
+      ],
+      "null_training_rows": [
+        7200,
+        7200,
+        7200,
+        7200
+      ],
+      "content_shrinkage": [
+        0.0012395067343811492,
+        0.0007130508693771905,
+        0.0007137193842643321,
+        0.0006939045190056738
+      ],
+      "null_shrinkage": [
+        0.0017618804408362561,
+        0.0016221541573329917,
+        0.0016479700127680467,
+        0.0018086647814501801
+      ],
+      "content_n_floored": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "null_n_floored": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 3,
+      "class_mean_difference_vs_windowmean": [
+        1.9984014443252818e-15,
+        2.886579864025407e-15,
+        2.4424906541753444e-15,
+        2.886579864025407e-15
+      ],
+      "thresholds": [
+        0.04904541743427673,
+        1.0642116234658676e-07,
+        1.320520219062624e-07,
+        2.5998933958361684e-07
+      ],
+      "calibration": [
+        {
+          "threshold": 0.04904541743427673,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 1.0642116234658676e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 1.320520219062624e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 2.5998933958361684e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        }
+      ],
+      "content_training_rows": [
+        17280,
+        14400,
+        14400,
+        14400
+      ],
+      "null_training_rows": [
+        7200,
+        7200,
+        7200,
+        7200
+      ],
+      "content_shrinkage": [
+        0.0012380719729844795,
+        0.0007068925149215531,
+        0.000719593646648114,
+        0.0007417028952035273
+      ],
+      "null_shrinkage": [
+        0.0017216958598370335,
+        0.0017019426444179787,
+        0.001695789508074307,
+        0.0016491399677033267
+      ],
+      "content_n_floored": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "null_n_floored": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 4,
+      "class_mean_difference_vs_windowmean": [
+        1.9984014443252818e-15,
+        4.6629367034256575e-15,
+        1.7763568394002505e-15,
+        3.1086244689504383e-15
+      ],
+      "thresholds": [
+        0.042841109255925616,
+        6.116313092044798e-08,
+        9.008417818494084e-08,
+        1.2323740165502297e-07
+      ],
+      "calibration": [
+        {
+          "threshold": 0.042841109255925616,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 6.116313092044798e-08,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 9.008417818494084e-08,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        },
+        {
+          "threshold": 1.2323740165502297e-07,
+          "crossfit_baseline_fpr": 0.04986111111111111,
+          "baseline_samples": 7200,
+          "decision": "strict > threshold",
+          "quantile": 0.95,
+          "quantile_method": "higher"
+        }
+      ],
+      "content_training_rows": [
+        17280,
+        14400,
+        14400,
+        14400
+      ],
+      "null_training_rows": [
+        7200,
+        7200,
+        7200,
+        7200
+      ],
+      "content_shrinkage": [
+        0.0012009149774964251,
+        0.0007160037215286018,
+        0.0007126521483353166,
+        0.0007451603287136811
+      ],
+      "null_shrinkage": [
+        0.0016996685926696108,
+        0.0016255750751635247,
+        0.0016242879692201773,
+        0.001734785055463655
+      ],
+      "content_n_floored": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "null_n_floored": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "calibration": "Four existing outer-training folds, whole-trial readout-only cross-fit conditional on fixed upstream/scaler. Not fully nested representation validation. q95 baseline, strict >; final refit/OOD FPR not guaranteed.",
+  "activity_threshold_pairs": [
+    [
+      0.25,
+      0.05
+    ],
+    [
+      0.5,
+      0.1
+    ],
+    [
+      0.75,
+      0.15
+    ]
+  ],
+  "activity_primary_pair": [
+    0.5,
+    0.1
+  ],
+  "limitations": [
+    "Null is baseline-like distribution, not proof of absent internal content.",
+    "Baseline subtraction uses the same baseline window and can suppress baseline noise relative to later inactive epochs.",
+    "Prior content .5 is an explicit design assumption, not estimated true prevalence.",
+    "No time/gain hard gate. Ground truth is read only after every fit and prediction is completed."
+  ]
+}

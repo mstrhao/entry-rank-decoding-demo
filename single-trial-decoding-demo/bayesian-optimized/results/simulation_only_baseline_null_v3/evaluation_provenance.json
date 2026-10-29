@@ -1,0 +1,18 @@
+{
+  "ground_truth_sha256": "9bfc8b0de11d011e19490cb7f398970fbd59981974b9538a3d329f143d19a379",
+  "use": "Evaluation only, opened after all fits/predictions; no threshold selection from gain truth",
+  "activity_threshold_pairs": [
+    [
+      0.25,
+      0.05
+    ],
+    [
+      0.5,
+      0.1
+    ],
+    [
+      0.75,
+      0.15
+    ]
+  ]
+}

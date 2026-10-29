@@ -1,0 +1,759 @@
+{
+  "fixed_outer_fold": 0,
+  "component_names": [
+    "Entry",
+    "Rank 1",
+    "Rank 2",
+    "Rank 3"
+  ],
+  "dimensions": [
+    5,
+    5,
+    5,
+    5
+  ],
+  "source_run": "ordered_ring_transient_shared_r3",
+  "definitions": {
+    "TG_axes": "[train_rank,test_rank,train_bin,test_bin]; native bins=2 frames; pooled inner-validation balanced accuracy; other target labels used only inside outer-training conditional analysis",
+    "PCA": "Centered K x P training template in outer-training standardized ROI coordinates; separate SVD PCA per component, scores=U*s; variance ratio=s^2/sum(s^2); no trajectory and no aligned axes across components",
+    "principal_angles": "All principal angles between full column-orthonormal row-space bases, sorted ascending; not computed on PCA2",
+    "VAF": "VAF[i,j]=||center(S_i) Q_j||_F^2 / ||center(S_i)||_F^2; rows source template, columns target full subspace; diagonal 1; directional, not unique/additive variance and not held-out trial VAF"
+  },
+  "pca_variance_ratios": [
+    [
+      0.5062353046670139,
+      0.4926821841191444,
+      0.0004701656501101372,
+      0.00036521586347271044,
+      0.0002471297002588142,
+      5.366094747885711e-33
+    ],
+    [
+      0.5026842087748629,
+      0.49494082154931346,
+      0.0010525509799816461,
+      0.0008030429868449429,
+      0.0005193757089970798,
+      5.818212976268047e-33
+    ],
+    [
+      0.507877862480771,
+      0.48977807425373027,
+      0.0009991289684087848,
+      0.0007803310306317469,
+      0.0005646032664581372,
+      2.6595867861898436e-33
+    ],
+    [
+      0.5017010280459756,
+      0.49443984889899634,
+      0.0016253721753890968,
+      0.0013732465423537939,
+      0.0008605043372850778,
+      4.1047267402010956e-33
+    ]
+  ],
+  "pca_2d_total_variance": [
+    0.9989174887861583,
+    0.9976250303241763,
+    0.9976559367345013,
+    0.996140876944972
+  ],
+  "principal_angle_pairs": [
+    {
+      "source": 0,
+      "target": 1,
+      "angles_degrees": [
+        45.73594470705087,
+        61.82751861161207,
+        70.94041751807806,
+        84.0753103525333,
+        88.30703746097001
+      ],
+      "source_dimension": 5,
+      "target_dimension": 5
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "angles_degrees": [
+        52.67445771690737,
+        55.13449196086732,
+        65.15764660044498,
+        84.51954122322097,
+        89.73692622014539
+      ],
+      "source_dimension": 5,
+      "target_dimension": 5
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "angles_degrees": [
+        58.4918534467101,
+        65.94321039963435,
+        73.47592234719967,
+        83.04781442728545,
+        88.43247151628353
+      ],
+      "source_dimension": 5,
+      "target_dimension": 5
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "angles_degrees": [
+        60.32689361836249,
+        75.33225820135979,
+        82.92153055568514,
+        85.39842013353983,
+        85.8001115649595
+      ],
+      "source_dimension": 5,
+      "target_dimension": 5
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "angles_degrees": [
+        54.84320237970879,
+        64.17048944654645,
+        73.02878452146788,
+        82.72452556984332,
+        89.20682793560096
+      ],
+      "source_dimension": 5,
+      "target_dimension": 5
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "angles_degrees": [
+        54.051903180597215,
+        68.48760080744692,
+        79.04229028656074,
+        83.32645316114908,
+        88.9099747514568
+      ],
+      "source_dimension": 5,
+      "target_dimension": 5
+    }
+  ],
+  "template_vaf": [
+    [
+      1.0000000000000002,
+      0.02826883683152767,
+      0.0773111997810491,
+      0.042909059218717245
+    ],
+    [
+      0.04430178924632838,
+      1.0000000000000004,
+      0.016050591171560467,
+      0.03515727982848285
+    ],
+    [
+      0.017852579407053714,
+      0.02822990353700188,
+      1.0000000000000004,
+      0.07882030507533005
+    ],
+    [
+      0.06228092804812887,
+      0.10921177422143524,
+      0.03065365437816189,
+      0.9999999999999991
+    ]
+  ],
+  "frozen_input_sha256": {
+    "fold_0.json": "a76e888cfac9794c000c3a693946a32a59118a00de616e15ead88425bde8d07a",
+    "fold_0.npz": "907e8a66ba44f2b47e59a14ce08dd6d33b9a6c704fd77d09576fdbd14dbed41c",
+    "config.json": "01c1dbfb5911c418670582136bd2c37d814c26c449501419682b22ba4c443778",
+    "provenance.json": "3f54360d83bd8690b7fb66ca228a9c0ea1a0a716659858e6e434d8fdae561e13"
+  },
+  "plot_script_sha256": "f0a10b7819c8b7af65197107becab60857a51b116bf8ac90fb8d2e8d54e8fdcb",
+  "limitations": "One fixed fold selected in advance; descriptive simulation. TG not a significance map; PCA2 omits remaining dimensions. Low angles/high VAF do not prove shared source identity. Existing Rank-only source-allocation failure remains.",
+  "leading_two_diagnostic": {
+    "label": "Dimensionality-truncated diagnostic only; full source-template energy denominator, NOT inference/readout bases",
+    "angles": [
+      {
+        "source": 0,
+        "target": 1,
+        "angles_degrees": [
+          89.00433472731693,
+          89.87415070778933
+        ],
+        "source_dimension": 2,
+        "target_dimension": 2
+      },
+      {
+        "source": 0,
+        "target": 2,
+        "angles_degrees": [
+          89.15358379433148,
+          89.73340852383961
+        ],
+        "source_dimension": 2,
+        "target_dimension": 2
+      },
+      {
+        "source": 0,
+        "target": 3,
+        "angles_degrees": [
+          88.46440666382632,
+          89.12765998238962
+        ],
+        "source_dimension": 2,
+        "target_dimension": 2
+      },
+      {
+        "source": 1,
+        "target": 2,
+        "angles_degrees": [
+          89.07282236592235,
+          89.63259036475213
+        ],
+        "source_dimension": 2,
+        "target_dimension": 2
+      },
+      {
+        "source": 1,
+        "target": 3,
+        "angles_degrees": [
+          89.22644605485151,
+          89.57941216255503
+        ],
+        "source_dimension": 2,
+        "target_dimension": 2
+      },
+      {
+        "source": 2,
+        "target": 3,
+        "angles_degrees": [
+          89.09747817264319,
+          89.56867680138717
+        ],
+        "source_dimension": 2,
+        "target_dimension": 2
+      }
+    ],
+    "template_vaf": [
+      [
+        0.9989174887861586,
+        0.00018623365334109426,
+        0.00013036859193425024,
+        0.0005121545072921921
+      ],
+      [
+        0.00020095668756639904,
+        0.9976250303241768,
+        0.00020013357792926354,
+        0.0002902786647915478
+      ],
+      [
+        0.00021692985322647448,
+        0.00017334934985520128,
+        0.997655936734502,
+        0.00020193553894918298
+      ],
+      [
+        0.0006000921906760953,
+        0.00022211932704247918,
+        0.00037428862793185074,
+        0.9961408769449711
+      ]
+    ]
+  },
+  "wrapper_source_sha256": "b2485fa1b28c42d9ebbdd8641b8d4d8cfabb3e37fe26159acdb30093932d6c3c",
+  "ring_plot_source_sha256": "78efad9fd33c798285574242e1fa5eb04c51342a4039c4d4322f50a5d4c45b33",
+  "true_template_rank": 2,
+  "learned_dimensions_unchanged": [
+    5,
+    5,
+    5,
+    5
+  ],
+  "within_rank_TG_late_late_mean": 0.997530864197531,
+  "shared_TG_mean": {
+    "early_early": 0.8121431327160492,
+    "early_late": 0.19134413580246912,
+    "late_early": 0.13655169753086419,
+    "late_late": 0.16040709876543208
+  },
+  "shared_TG_each_fold_direction": [
+    {
+      "early_early": [
+        0.7904513888888888,
+        0.8556134259259259,
+        0.8107638888888888,
+        0.8114583333333333,
+        0.8502314814814815,
+        0.7871527777777777
+      ],
+      "early_late": [
+        0.16472222222222224,
+        0.18275462962962966,
+        0.19511574074074073,
+        0.1956712962962963,
+        0.2367361111111111,
+        0.20763888888888893
+      ],
+      "late_early": [
+        0.16106481481481483,
+        0.2263425925925926,
+        0.11618055555555554,
+        0.10439814814814816,
+        0.11685185185185186,
+        0.08949074074074075
+      ],
+      "late_late": [
+        0.11756481481481482,
+        0.220787037037037,
+        0.16530555555555554,
+        0.16394444444444445,
+        0.18950925925925927,
+        0.12090740740740741
+      ]
+    },
+    {
+      "early_early": [
+        0.7748263888888888,
+        0.8528356481481483,
+        0.7965856481481483,
+        0.8031828703703704,
+        0.8504050925925926,
+        0.7809027777777778
+      ],
+      "early_late": [
+        0.1411111111111111,
+        0.1914814814814815,
+        0.18143518518518523,
+        0.20157407407407407,
+        0.23493055555555556,
+        0.19569444444444445
+      ],
+      "late_early": [
+        0.1640972222222222,
+        0.2274305555555556,
+        0.11002314814814815,
+        0.1132638888888889,
+        0.10516203703703705,
+        0.09583333333333335
+      ],
+      "late_late": [
+        0.09568518518518519,
+        0.23192592592592595,
+        0.15430555555555556,
+        0.1681851851851852,
+        0.1847685185185185,
+        0.11394444444444446
+      ]
+    },
+    {
+      "early_early": [
+        0.7802083333333334,
+        0.8449074074074074,
+        0.8048611111111112,
+        0.7972222222222223,
+        0.8495949074074074,
+        0.781886574074074
+      ],
+      "early_late": [
+        0.1532175925925926,
+        0.16962962962962963,
+        0.19803240740740738,
+        0.16717592592592592,
+        0.23435185185185187,
+        0.18381944444444442
+      ],
+      "late_early": [
+        0.16814814814814813,
+        0.2236342592592593,
+        0.11400462962962964,
+        0.09601851851851853,
+        0.11800925925925926,
+        0.0955324074074074
+      ],
+      "late_late": [
+        0.11415740740740742,
+        0.22816666666666668,
+        0.15844444444444444,
+        0.14810185185185185,
+        0.17472222222222222,
+        0.11660185185185185
+      ]
+    },
+    {
+      "early_early": [
+        0.7772569444444444,
+        0.850636574074074,
+        0.7999421296296295,
+        0.8026041666666667,
+        0.8504050925925926,
+        0.7733796296296296
+      ],
+      "early_late": [
+        0.15363425925925925,
+        0.1681712962962963,
+        0.1949768518518518,
+        0.17581018518518518,
+        0.24782407407407403,
+        0.18875
+      ],
+      "late_early": [
+        0.17314814814814813,
+        0.22571759259259258,
+        0.11337962962962962,
+        0.10569444444444445,
+        0.11622685185185186,
+        0.09118055555555557
+      ],
+      "late_late": [
+        0.10793518518518516,
+        0.23109259259259257,
+        0.15512962962962965,
+        0.16014814814814815,
+        0.18125,
+        0.11041666666666666
+      ]
+    },
+    {
+      "early_early": [
+        0.7827546296296297,
+        0.8542824074074074,
+        0.8038773148148147,
+        0.8062499999999999,
+        0.8553240740740741,
+        0.7844907407407409
+      ],
+      "early_late": [
+        0.1555787037037037,
+        0.18974537037037037,
+        0.1896296296296296,
+        0.18143518518518517,
+        0.2609722222222222,
+        0.19870370370370374
+      ],
+      "late_early": [
+        0.17675925925925925,
+        0.2330787037037037,
+        0.11122685185185184,
+        0.10557870370370372,
+        0.11342592592592593,
+        0.08564814814814814
+      ],
+      "late_late": [
+        0.11237037037037036,
+        0.23920370370370372,
+        0.16174999999999998,
+        0.16292592592592592,
+        0.1964166666666667,
+        0.12654629629629632
+      ]
+    }
+  ],
+  "all_fold_pca2_ratios": [
+    [
+      0.9989174887861583,
+      0.9976250303241763,
+      0.9976559367345013,
+      0.996140876944972
+    ],
+    [
+      0.9989355029553268,
+      0.9973667357640499,
+      0.9976750659729199,
+      0.9964407600857739
+    ],
+    [
+      0.9990584285034607,
+      0.9975892046321746,
+      0.9976989196931546,
+      0.9959792887668936
+    ],
+    [
+      0.9989278035448843,
+      0.9978625720878482,
+      0.9976535069721628,
+      0.996645125165837
+    ],
+    [
+      0.9988132045241134,
+      0.997454400878224,
+      0.9977995396792918,
+      0.9961148666131304
+    ]
+  ],
+  "all_fold_topology": [
+    [
+      {
+        "angular_order_labels": [
+          4,
+          3,
+          2,
+          1,
+          6,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -1.0000000000000002,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          1,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -0.9999999999999999,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          4,
+          3,
+          2,
+          1,
+          6,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -1.0,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          6,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": 1.0,
+        "nonadjacent_edge_crossings": []
+      }
+    ],
+    [
+      {
+        "angular_order_labels": [
+          4,
+          3,
+          2,
+          1,
+          6,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -0.9999999999999997,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          3,
+          4,
+          5,
+          6,
+          1,
+          2
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": 1.0,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          4,
+          3,
+          2,
+          1,
+          6,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -1.0,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          6,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": 0.9999999999999999,
+        "nonadjacent_edge_crossings": []
+      }
+    ],
+    [
+      {
+        "angular_order_labels": [
+          4,
+          3,
+          2,
+          1,
+          6,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -1.0,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          3,
+          4,
+          5,
+          6,
+          1,
+          2
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": 0.9999999999999997,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": 1.0000000000000002,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          1,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -1.0000000000000002,
+        "nonadjacent_edge_crossings": []
+      }
+    ],
+    [
+      {
+        "angular_order_labels": [
+          4,
+          3,
+          2,
+          1,
+          6,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -0.9999999999999999,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          3,
+          4,
+          5,
+          6,
+          1,
+          2
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": 1.0,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          5,
+          6,
+          1,
+          2,
+          3,
+          4
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": 0.9999999999999997,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          6,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": 1.0,
+        "nonadjacent_edge_crossings": []
+      }
+    ],
+    [
+      {
+        "angular_order_labels": [
+          4,
+          3,
+          2,
+          1,
+          6,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -1.0,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          3,
+          4,
+          5,
+          6,
+          1,
+          2
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": 1.0000000000000002,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          4,
+          3,
+          2,
+          1,
+          6,
+          5
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -1.0000000000000002,
+        "nonadjacent_edge_crossings": []
+      },
+      {
+        "angular_order_labels": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "cyclic_order_up_to_rotation_reflection": true,
+        "winding_number": -1.0,
+        "nonadjacent_edge_crossings": []
+      }
+    ]
+  ]
+}

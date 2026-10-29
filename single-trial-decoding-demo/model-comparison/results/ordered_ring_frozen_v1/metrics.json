@@ -1,0 +1,709 @@
+{
+  "neural_representation": [
+    {
+      "name": "Entry window T1",
+      "window": [
+        1.2,
+        1.6
+      ],
+      "reference_sst": 3211618.311046865,
+      "r2": {
+        "Joint ridge": 0.6900542460020601,
+        "Only 0": 0.5245766133714085,
+        "Drop 0": 0.18181446862777695,
+        "Only 1": 0.09437129378343112,
+        "Drop 1": 0.5930343988054398,
+        "Only 2": 0.04089401564984563,
+        "Drop 2": 0.6524073810486329,
+        "Only 3": 0.039628249572579044,
+        "Drop 3": 0.6523224158995347,
+        "Orthogonal union": 0.7257337558930064
+      },
+      "drop_block_delta_r2": {
+        "0": 0.5082397773742832,
+        "1": 0.09701984719662027,
+        "2": 0.03764686495342717,
+        "3": 0.037731830102525454
+      }
+    },
+    {
+      "name": "Entry window T2",
+      "window": [
+        2.5,
+        2.9
+      ],
+      "reference_sst": 5211018.459535413,
+      "r2": {
+        "Joint ridge": 0.7947241000631976,
+        "Only 0": 0.3283978681736772,
+        "Drop 0": 0.48308339128858546,
+        "Only 1": 0.38887918839884683,
+        "Drop 1": 0.4196176191466915,
+        "Only 2": 0.0690781394690696,
+        "Drop 2": 0.733584543643014,
+        "Only 3": 0.030862638279420818,
+        "Drop 3": 0.7703804803691191,
+        "Orthogonal union": 0.8325449673634384
+      },
+      "drop_block_delta_r2": {
+        "0": 0.31164070877461214,
+        "1": 0.3751064809165061,
+        "2": 0.06113955642018365,
+        "3": 0.0243436196940785
+      }
+    },
+    {
+      "name": "Entry window T3",
+      "window": [
+        3.8,
+        4.2
+      ],
+      "reference_sst": 7272589.178854458,
+      "r2": {
+        "Joint ridge": 0.839099819063321,
+        "Only 0": 0.2375506285376432,
+        "Drop 0": 0.6149378950141964,
+        "Only 1": 0.2860731113253784,
+        "Drop 1": 0.5655412669140025,
+        "Only 2": 0.28663999046279964,
+        "Drop 2": 0.5667886597411109,
+        "Only 3": 0.053728138939043935,
+        "Drop 3": 0.7949236857221977,
+        "Orthogonal union": 0.8778716712984775
+      },
+      "drop_block_delta_r2": {
+        "0": 0.2241619240491246,
+        "1": 0.27355855214931846,
+        "2": 0.27231115932221006,
+        "3": 0.04417613334112325
+      }
+    },
+    {
+      "name": "Rank late window",
+      "window": [
+        4.5,
+        5.5
+      ],
+      "reference_sst": 16019385.71593123,
+      "r2": {
+        "Joint ridge": 0.8239230406369442,
+        "Only 0": 0.024393287630308014,
+        "Drop 0": 0.8029992410134831,
+        "Only 1": 0.2833036885929229,
+        "Drop 1": 0.5528736256957455,
+        "Only 2": 0.2755759218377263,
+        "Drop 2": 0.5594178698785727,
+        "Only 3": 0.26347644931589187,
+        "Drop 3": 0.5793046920629366,
+        "Orthogonal union": 0.8621445212522701
+      },
+      "drop_block_delta_r2": {
+        "0": 0.020923799623461137,
+        "1": 0.2710494149411987,
+        "2": 0.26450517075837154,
+        "3": 0.24461834857400766
+      }
+    }
+  ],
+  "neural_fold_statistics": [
+    {
+      "fold": 0,
+      "window": "Entry window T1",
+      "sst": 639161.9976068633,
+      "sse": {
+        "Joint ridge": 197760.85466158492,
+        "Only 0": 304731.12735916104,
+        "Drop 0": 523623.58018498064,
+        "Only 1": 576992.0715879218,
+        "Drop 1": 261866.2295759456,
+        "Only 2": 613391.9863522068,
+        "Drop 2": 221779.08001091922,
+        "Only 3": 616534.0656499756,
+        "Drop 3": 221578.07528686302,
+        "Orthogonal union": 174799.00670637528
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 0,
+      "window": "Entry window T2",
+      "sst": 1045556.9656683141,
+      "sse": {
+        "Joint ridge": 212057.72055100993,
+        "Only 0": 708496.4999812226,
+        "Drop 0": 531945.2137384891,
+        "Only 1": 627973.3625075547,
+        "Drop 1": 618638.6267869738,
+        "Only 2": 974936.2130624779,
+        "Drop 2": 274292.8521865794,
+        "Only 3": 1017547.9892735891,
+        "Drop 3": 237078.88187819318,
+        "Orthogonal union": 172515.06666613583
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 0,
+      "window": "Entry window T3",
+      "sst": 1459216.1346178267,
+      "sse": {
+        "Joint ridge": 233259.99439538742,
+        "Only 0": 1113743.4957983175,
+        "Drop 0": 562151.5334065713,
+        "Only 1": 1037002.1111102472,
+        "Drop 1": 635969.1285753809,
+        "Only 2": 1047021.5880985014,
+        "Drop 2": 625609.4107732235,
+        "Only 3": 1378540.640784611,
+        "Drop 3": 300665.4825916231,
+        "Orthogonal union": 176840.53361521268
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 0,
+      "window": "Rank late window",
+      "sst": 3205998.286662142,
+      "sse": {
+        "Joint ridge": 564435.2450460147,
+        "Only 0": 3119073.037501171,
+        "Drop 0": 635017.096839899,
+        "Only 1": 2279041.1816033246,
+        "Drop 1": 1437163.947429536,
+        "Only 2": 2336339.0765480627,
+        "Drop 2": 1401624.152881138,
+        "Only 3": 2359353.2595521915,
+        "Drop 3": 1336875.2748219222,
+        "Orthogonal union": 442888.727004873
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 1,
+      "window": "Entry window T1",
+      "sst": 642781.2212203084,
+      "sse": {
+        "Joint ridge": 199139.5669424716,
+        "Only 0": 306871.9395583908,
+        "Drop 0": 519462.2175302548,
+        "Only 1": 579693.4955097672,
+        "Drop 1": 262787.70180983417,
+        "Only 2": 613062.9254518752,
+        "Drop 2": 224355.1843024913,
+        "Only 3": 616217.9624557375,
+        "Drop 3": 221957.91077751672,
+        "Orthogonal union": 176351.74000675988
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 1,
+      "window": "Entry window T2",
+      "sst": 1035189.8828816029,
+      "sse": {
+        "Joint ridge": 213068.76001631242,
+        "Only 0": 696594.5551562114,
+        "Drop 0": 533102.1876535674,
+        "Only 1": 632701.6918268502,
+        "Drop 1": 604191.5993514797,
+        "Only 2": 962627.6304652715,
+        "Drop 2": 276776.20593781874,
+        "Only 3": 1003802.7052857493,
+        "Drop 3": 237414.34406063578,
+        "Orthogonal union": 173826.24902388395
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 1,
+      "window": "Entry window T3",
+      "sst": 1453508.3627638104,
+      "sse": {
+        "Joint ridge": 233633.9758513056,
+        "Only 0": 1108654.5360964541,
+        "Drop 0": 556348.8224573606,
+        "Only 1": 1038354.8627227107,
+        "Drop 1": 635140.3963378223,
+        "Only 2": 1035276.0011777986,
+        "Drop 2": 629071.854289398,
+        "Only 3": 1375083.4336207295,
+        "Drop 3": 297058.9867081022,
+        "Orthogonal union": 176235.36309362657
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 1,
+      "window": "Rank late window",
+      "sst": 3197404.8497527326,
+      "sse": {
+        "Joint ridge": 565624.1905937963,
+        "Only 0": 3124059.5364144184,
+        "Drop 0": 631294.6508876092,
+        "Only 1": 2277743.2314030733,
+        "Drop 1": 1453707.7712714092,
+        "Only 2": 2330683.0268998863,
+        "Drop 2": 1397439.8859957377,
+        "Only 3": 2360735.2163673374,
+        "Drop 3": 1347217.3846120867,
+        "Orthogonal union": 442379.03282259824
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 2,
+      "window": "Entry window T1",
+      "sst": 653176.4620381066,
+      "sse": {
+        "Joint ridge": 202346.65085336706,
+        "Only 0": 314620.1039529841,
+        "Drop 0": 526519.3298839082,
+        "Only 1": 589194.29394978,
+        "Drop 1": 269043.8811797535,
+        "Only 2": 622256.358442863,
+        "Drop 2": 228399.77535234162,
+        "Only 3": 627347.8845534693,
+        "Drop 3": 227796.0321136139,
+        "Orthogonal union": 179090.088281173
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 2,
+      "window": "Entry window T2",
+      "sst": 1044493.1181191207,
+      "sse": {
+        "Joint ridge": 213333.8185512813,
+        "Only 0": 699824.9766578907,
+        "Drop 0": 533969.3149852811,
+        "Only 1": 639056.8346674212,
+        "Drop 1": 598739.9318029975,
+        "Only 2": 966756.3799306483,
+        "Drop 2": 276690.56408231135,
+        "Only 3": 1007238.6133739336,
+        "Drop 3": 241158.394623625,
+        "Orthogonal union": 173360.05602769984
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 2,
+      "window": "Entry window T3",
+      "sst": 1452890.773160804,
+      "sse": {
+        "Joint ridge": 239018.2863280921,
+        "Only 0": 1106690.327514433,
+        "Drop 0": 560765.109070057,
+        "Only 1": 1035038.272969888,
+        "Drop 1": 633156.387343626,
+        "Only 2": 1039821.7165123012,
+        "Drop 2": 623953.9865322099,
+        "Only 3": 1369862.1561342943,
+        "Drop 3": 305792.01651959965,
+        "Orthogonal union": 181905.47581922618
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 2,
+      "window": "Rank late window",
+      "sst": 3211722.9459551834,
+      "sse": {
+        "Joint ridge": 561433.2109372758,
+        "Only 0": 3139939.5016283323,
+        "Drop 0": 626428.9771589742,
+        "Only 1": 2299954.311165559,
+        "Drop 1": 1423380.9767580403,
+        "Only 2": 2322895.5542585067,
+        "Drop 2": 1393119.7491511502,
+        "Only 3": 2343686.3420781055,
+        "Drop 3": 1362966.536026524,
+        "Orthogonal union": 437384.97321673215
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 3,
+      "window": "Entry window T1",
+      "sst": 636087.6330298493,
+      "sse": {
+        "Joint ridge": 199284.08951777237,
+        "Only 0": 301922.5796373361,
+        "Drop 0": 522674.81608300126,
+        "Only 1": 578530.2408424353,
+        "Drop 1": 258902.4877268045,
+        "Only 2": 611288.2077514464,
+        "Drop 2": 222308.4858171998,
+        "Only 3": 608805.4618835824,
+        "Drop 3": 223053.6134636409,
+        "Orthogonal union": 176623.94240617892
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 3,
+      "window": "Entry window T2",
+      "sst": 1045613.366317057,
+      "sse": {
+        "Joint ridge": 216892.34260587703,
+        "Only 0": 705880.7804001805,
+        "Drop 0": 539093.5140265395,
+        "Only 1": 635421.7998148515,
+        "Drop 1": 612715.5844406933,
+        "Only 2": 976130.471992112,
+        "Drop 2": 279711.0325450245,
+        "Only 3": 1012820.7482553831,
+        "Drop 3": 241291.6220279096,
+        "Orthogonal union": 177219.9937916883
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 3,
+      "window": "Entry window T3",
+      "sst": 1459998.2554268527,
+      "sse": {
+        "Joint ridge": 234649.49716313303,
+        "Only 0": 1113187.727866078,
+        "Drop 0": 561600.3300270727,
+        "Only 1": 1040745.2229956079,
+        "Drop 1": 635806.9464863879,
+        "Only 2": 1043003.3811515354,
+        "Drop 2": 629771.5130660338,
+        "Only 3": 1378822.81468677,
+        "Drop 3": 297882.84059305774,
+        "Orthogonal union": 178709.52083879308
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 3,
+      "window": "Rank late window",
+      "sst": 3200231.4771330245,
+      "sse": {
+        "Joint ridge": 564603.2245642276,
+        "Only 0": 3117689.842521429,
+        "Drop 0": 631495.8003105896,
+        "Only 1": 2301974.358109779,
+        "Drop 1": 1430526.6034280043,
+        "Only 2": 2314889.5798592386,
+        "Drop 2": 1417186.4912132937,
+        "Only 3": 2360278.717918234,
+        "Drop 3": 1344367.098319199,
+        "Orthogonal union": 442675.1173166283
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 4,
+      "window": "Entry window T1",
+      "sst": 640410.9971517371,
+      "sse": {
+        "Joint ridge": 196896.29699581483,
+        "Only 0": 298732.7034884258,
+        "Drop 0": 535419.6907064959,
+        "Only 1": 584123.6340049098,
+        "Drop 1": 254417.87647030732,
+        "Only 2": 620282.863575192,
+        "Drop 2": 219492.294325994,
+        "Only 3": 615442.1245420701,
+        "Drop 3": 222222.06379595597,
+        "Orthogonal union": 173973.71427558322
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 4,
+      "window": "Entry window T2",
+      "sst": 1040165.1265493189,
+      "sse": {
+        "Joint ridge": 214343.8621439412,
+        "Only 0": 688934.2942147991,
+        "Drop 0": 555551.7596317483,
+        "Only 1": 649408.1414431949,
+        "Drop 1": 590097.5578335591,
+        "Only 2": 970600.3041612196,
+        "Drop 2": 280825.2062300716,
+        "Only 3": 1008782.6255627321,
+        "Drop 3": 239608.3128758109,
+        "Orthogonal union": 175689.90070181974
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 4,
+      "window": "Entry window T3",
+      "sst": 1446975.6528851646,
+      "sse": {
+        "Joint ridge": 229599.16101789838,
+        "Only 0": 1102704.9610462359,
+        "Drop 0": 559532.7029456137,
+        "Only 1": 1040956.4952698306,
+        "Drop 1": 619567.0221568258,
+        "Only 2": 1022851.5990476192,
+        "Drop 2": 642161.3406629683,
+        "Only 3": 1379537.4517799732,
+        "Drop 3": 290036.4576437186,
+        "Orthogonal union": 174498.26837941358
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "fold": 4,
+      "window": "Rank late window",
+      "sst": 3204028.156428147,
+      "sse": {
+        "Joint ridge": 564548.8565838239,
+        "Only 0": 3127858.3144363197,
+        "Drop 0": 631594.6193391487,
+        "Only 1": 2322321.5713333962,
+        "Drop 1": 1417910.5548587055,
+        "Only 2": 2300021.4924236825,
+        "Drop 2": 1448484.8027204275,
+        "Only 3": 2374601.3113600835,
+        "Drop 3": 1347854.1129465527,
+        "Orthogonal union": 443032.2367534137
+      },
+      "union_dimension": 20,
+      "component_dimensions": [
+        5,
+        5,
+        5,
+        5
+      ]
+    }
+  ],
+  "readout_scores": [
+    {
+      "window": "Entry / T1",
+      "method": "Logistic",
+      "mean_absolute_circular_error_degrees": 6.858333333333333,
+      "logscore_gain_vs_uniform_nats": 1.5100482883499793,
+      "nll_nats": 0.2817111808780756
+    },
+    {
+      "window": "Entry / T1",
+      "method": "Gaussian Bayes",
+      "mean_absolute_circular_error_degrees": 6.375,
+      "logscore_gain_vs_uniform_nats": 1.197201351156542,
+      "nll_nats": 0.5945581180715129
+    },
+    {
+      "window": "Entry / T2",
+      "method": "Logistic",
+      "mean_absolute_circular_error_degrees": 6.783333333333333,
+      "logscore_gain_vs_uniform_nats": 1.511879648926267,
+      "nll_nats": 0.27987982030178793
+    },
+    {
+      "window": "Entry / T2",
+      "method": "Gaussian Bayes",
+      "mean_absolute_circular_error_degrees": 6.683333333333334,
+      "logscore_gain_vs_uniform_nats": 1.2639586863287497,
+      "nll_nats": 0.5278007828993052
+    },
+    {
+      "window": "Entry / T3",
+      "method": "Logistic",
+      "mean_absolute_circular_error_degrees": 6.475,
+      "logscore_gain_vs_uniform_nats": 1.5228691476265412,
+      "nll_nats": 0.26889032160151377
+    },
+    {
+      "window": "Entry / T3",
+      "method": "Gaussian Bayes",
+      "mean_absolute_circular_error_degrees": 6.4,
+      "logscore_gain_vs_uniform_nats": 1.2683705885329635,
+      "nll_nats": 0.5233888806950915
+    },
+    {
+      "window": "Rank / T1",
+      "method": "Logistic",
+      "mean_absolute_circular_error_degrees": 0.25333333333333335,
+      "logscore_gain_vs_uniform_nats": 1.6552861315822192,
+      "nll_nats": 0.13647333764583583
+    },
+    {
+      "window": "Rank / T1",
+      "method": "Gaussian Bayes",
+      "mean_absolute_circular_error_degrees": 0.03,
+      "logscore_gain_vs_uniform_nats": 1.7905098598180358,
+      "nll_nats": 0.0012496094100191246
+    },
+    {
+      "window": "Rank / T2",
+      "method": "Logistic",
+      "mean_absolute_circular_error_degrees": 0.27666666666666667,
+      "logscore_gain_vs_uniform_nats": 1.651874637341794,
+      "nll_nats": 0.13988483188626089
+    },
+    {
+      "window": "Rank / T2",
+      "method": "Gaussian Bayes",
+      "mean_absolute_circular_error_degrees": 0.06,
+      "logscore_gain_vs_uniform_nats": 1.7867648143386754,
+      "nll_nats": 0.004994654889379665
+    },
+    {
+      "window": "Rank / T3",
+      "method": "Logistic",
+      "mean_absolute_circular_error_degrees": 0.32666666666666666,
+      "logscore_gain_vs_uniform_nats": 1.6498525692728918,
+      "nll_nats": 0.14190689995516317
+    },
+    {
+      "window": "Rank / T3",
+      "method": "Gaussian Bayes",
+      "mean_absolute_circular_error_degrees": 0.08,
+      "logscore_gain_vs_uniform_nats": 1.7862245129586305,
+      "nll_nats": 0.005534956269424519
+    }
+  ],
+  "definitions": {
+    "neural_level": "Identical upstream for both readouts. These scores cannot distinguish Logistic from Gaussian Bayes.",
+    "reference": "Per outer fold and fixed window, mu is mean of outer-training standardized neural data over training trials and window frames, without labels; SST=sum_test||Z-mu||^2.",
+    "operational_reconstruction": "W=Z_test-mu; frozen joint coordinates W A; reconstructed Zhat=mu+W A Q^T. Diagnostic window recentering only; original decoder predictions unchanged.",
+    "r2": "1-pooled_test_SSE/pooled_test_SST, pool sufficient statistics across folds, never mean fold ratios. Negative values retained. Same input is encoded/reconstructed; NOT independent or future-neural prediction.",
+    "orthogonal_union": "Training Q concatenation orthonormalized by SVD, same learned union; mu+W U U^T. Energy VAF/R2 for this centered orthogonal projection, distinct from operational ridge reconstruction.",
+    "component": "Only j uses its frozen joint-coordinate block, not a separately refitted projection. Drop j subtracts that block without refitting. Delta=R2_full-R2_drop_j; NOT unique information or additive variance partition.",
+    "label_logscore": "log(6)-NLL (nats per frame), improvement against explicit uniform prior baseline. Can be negative. Not neural variance, mutual information, Bayes factor, or parameter evidence.",
+    "circular_error": "Argmax class shortest circular distance on the fixed 1..6 ring, degrees in [0,180]. Per frame then averaged; only same six predefined target-present windows.",
+    "distinction": "No posterior-weighted neural-template reconstruction or AIC/BIC; those would require new likelihood/observation assumptions."
+  },
+  "provenance": {
+    "source_run": "ordered_ring_transient_shared_r3",
+    "comparison_run": "ordered_ring_matched_readouts_v1",
+    "source_sha256": {
+      "upstream/config.json": "01c1dbfb5911c418670582136bd2c37d814c26c449501419682b22ba4c443778",
+      "upstream/simulation_inputs.npz": "3a56645f1b59c33d485ce8210dacf34919e4421832d04943f446e37dd02029d9",
+      "comparison/comparison_oof.npz": "0431ec0d32c7c5548641926a8ea2193f8ee68b4d8521878660bf54f59351d746",
+      "upstream/fold_0.npz": "907e8a66ba44f2b47e59a14ce08dd6d33b9a6c704fd77d09576fdbd14dbed41c",
+      "upstream/fold_0.json": "a76e888cfac9794c000c3a693946a32a59118a00de616e15ead88425bde8d07a",
+      "upstream/fold_1.npz": "621100c62f48a5bc476d3cf13eac2279847b8129a0eb53cf759105bc9d6c9306",
+      "upstream/fold_1.json": "4338be6e5c8888bf0413790f4bfe583f105c8c641b154af301b28ade3085e7d1",
+      "upstream/fold_2.npz": "457d369995a5fe9765182e2c26d22b616589873722582fb0f39f26afcf18504a",
+      "upstream/fold_2.json": "ac199a88dc974725b521ee5bc100f69517934421be0b007b315266c7814b06b5",
+      "upstream/fold_3.npz": "1c23eda30263d1488f4555f8a22d87a19956d9650d28c06e7f8826c9168a297d",
+      "upstream/fold_3.json": "9eed429e6ad63f567af391de9ff30343feca6571e76e8034249d59b7c4c6fe69",
+      "upstream/fold_4.npz": "d3ab85a2850e2f091ba661c803022535b368af29b43830b8194701863540c3ec",
+      "upstream/fold_4.json": "5b5b96df41251a60a9248e534c03c877ddff4ff59ed867b1ad54891db3b001b1"
+    },
+    "source_unchanged": true,
+    "script_sha256": "ca3fe74f6b6da32173a879a0b99960280e4d0f3f0c2a9f7aedfd2992fb2e03c7",
+    "upstream_and_readout_commit": "c25e511744a056244a48b99c681ac88564cfd45b"
+  }
+}

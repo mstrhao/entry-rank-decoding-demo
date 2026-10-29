@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "jointdecode-demo"
+version = "0.1.0"
+authors = [{name = "Hao Zhou"}]
+description = "Simulation-only joint shared/private subspace probabilistic decoding"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.11", "scikit-learn>=1.4", "matplotlib>=3.7", "threadpoolctl>=3"]
+[project.optional-dependencies]
+test = ["pytest>=7"]
+[project.scripts]
+jointdecode = "jointdecode.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]

@@ -1,0 +1,354 @@
+{
+  "readouts": {
+    "content": [
+      {
+        "class_means": {
+          "__array__": "root/readouts/content/0/class_means"
+        },
+        "covariance": {
+          "__array__": "root/readouts/content/0/covariance"
+        },
+        "cholesky": {
+          "__array__": "root/readouts/content/0/cholesky"
+        },
+        "logdet": -1.6737641925339797,
+        "latent_mean": {
+          "__array__": "root/readouts/content/0/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/content/0/latent_scale"
+        },
+        "prior": {
+          "__array__": "root/readouts/content/0/prior"
+        },
+        "K": 6,
+        "shrinkage": 0.0012009149774964251,
+        "eigenvalue_floor": 1e-08,
+        "raw_eigenvalues": {
+          "__array__": "root/readouts/content/0/raw_eigenvalues"
+        },
+        "n_floored_eigenvalues": 0,
+        "training_rows": 17280,
+        "class_counts": {
+          "__array__": "root/readouts/content/0/class_counts"
+        },
+        "equal_sample_weights": true
+      },
+      {
+        "class_means": {
+          "__array__": "root/readouts/content/1/class_means"
+        },
+        "covariance": {
+          "__array__": "root/readouts/content/1/covariance"
+        },
+        "cholesky": {
+          "__array__": "root/readouts/content/1/cholesky"
+        },
+        "logdet": -4.990974246781622,
+        "latent_mean": {
+          "__array__": "root/readouts/content/1/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/content/1/latent_scale"
+        },
+        "prior": {
+          "__array__": "root/readouts/content/1/prior"
+        },
+        "K": 6,
+        "shrinkage": 0.0007160037215286018,
+        "eigenvalue_floor": 1e-08,
+        "raw_eigenvalues": {
+          "__array__": "root/readouts/content/1/raw_eigenvalues"
+        },
+        "n_floored_eigenvalues": 0,
+        "training_rows": 14400,
+        "class_counts": {
+          "__array__": "root/readouts/content/1/class_counts"
+        },
+        "equal_sample_weights": true
+      },
+      {
+        "class_means": {
+          "__array__": "root/readouts/content/2/class_means"
+        },
+        "covariance": {
+          "__array__": "root/readouts/content/2/covariance"
+        },
+        "cholesky": {
+          "__array__": "root/readouts/content/2/cholesky"
+        },
+        "logdet": -4.8625610338504295,
+        "latent_mean": {
+          "__array__": "root/readouts/content/2/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/content/2/latent_scale"
+        },
+        "prior": {
+          "__array__": "root/readouts/content/2/prior"
+        },
+        "K": 6,
+        "shrinkage": 0.0007126521483353166,
+        "eigenvalue_floor": 1e-08,
+        "raw_eigenvalues": {
+          "__array__": "root/readouts/content/2/raw_eigenvalues"
+        },
+        "n_floored_eigenvalues": 0,
+        "training_rows": 14400,
+        "class_counts": {
+          "__array__": "root/readouts/content/2/class_counts"
+        },
+        "equal_sample_weights": true
+      },
+      {
+        "class_means": {
+          "__array__": "root/readouts/content/3/class_means"
+        },
+        "covariance": {
+          "__array__": "root/readouts/content/3/covariance"
+        },
+        "cholesky": {
+          "__array__": "root/readouts/content/3/cholesky"
+        },
+        "logdet": -4.998881212475707,
+        "latent_mean": {
+          "__array__": "root/readouts/content/3/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/content/3/latent_scale"
+        },
+        "prior": {
+          "__array__": "root/readouts/content/3/prior"
+        },
+        "K": 6,
+        "shrinkage": 0.0007451603287136811,
+        "eigenvalue_floor": 1e-08,
+        "raw_eigenvalues": {
+          "__array__": "root/readouts/content/3/raw_eigenvalues"
+        },
+        "n_floored_eigenvalues": 0,
+        "training_rows": 14400,
+        "class_counts": {
+          "__array__": "root/readouts/content/3/class_counts"
+        },
+        "equal_sample_weights": true
+      }
+    ],
+    "null": [
+      {
+        "class_means": {
+          "__array__": "root/readouts/null/0/class_means"
+        },
+        "covariance": {
+          "__array__": "root/readouts/null/0/covariance"
+        },
+        "cholesky": {
+          "__array__": "root/readouts/null/0/cholesky"
+        },
+        "logdet": -11.811639115518883,
+        "latent_mean": {
+          "__array__": "root/readouts/null/0/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/null/0/latent_scale"
+        },
+        "prior": {
+          "__array__": "root/readouts/null/0/prior"
+        },
+        "K": 1,
+        "shrinkage": 0.0016996685926696108,
+        "eigenvalue_floor": 1e-08,
+        "raw_eigenvalues": {
+          "__array__": "root/readouts/null/0/raw_eigenvalues"
+        },
+        "n_floored_eigenvalues": 0,
+        "training_rows": 7200,
+        "class_counts": {
+          "__array__": "root/readouts/null/0/class_counts"
+        },
+        "equal_sample_weights": true
+      },
+      {
+        "class_means": {
+          "__array__": "root/readouts/null/1/class_means"
+        },
+        "covariance": {
+          "__array__": "root/readouts/null/1/covariance"
+        },
+        "cholesky": {
+          "__array__": "root/readouts/null/1/cholesky"
+        },
+        "logdet": -11.679807089217135,
+        "latent_mean": {
+          "__array__": "root/readouts/null/1/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/null/1/latent_scale"
+        },
+        "prior": {
+          "__array__": "root/readouts/null/1/prior"
+        },
+        "K": 1,
+        "shrinkage": 0.0016255750751635247,
+        "eigenvalue_floor": 1e-08,
+        "raw_eigenvalues": {
+          "__array__": "root/readouts/null/1/raw_eigenvalues"
+        },
+        "n_floored_eigenvalues": 0,
+        "training_rows": 7200,
+        "class_counts": {
+          "__array__": "root/readouts/null/1/class_counts"
+        },
+        "equal_sample_weights": true
+      },
+      {
+        "class_means": {
+          "__array__": "root/readouts/null/2/class_means"
+        },
+        "covariance": {
+          "__array__": "root/readouts/null/2/covariance"
+        },
+        "cholesky": {
+          "__array__": "root/readouts/null/2/cholesky"
+        },
+        "logdet": -11.509366181727147,
+        "latent_mean": {
+          "__array__": "root/readouts/null/2/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/null/2/latent_scale"
+        },
+        "prior": {
+          "__array__": "root/readouts/null/2/prior"
+        },
+        "K": 1,
+        "shrinkage": 0.0016242879692201773,
+        "eigenvalue_floor": 1e-08,
+        "raw_eigenvalues": {
+          "__array__": "root/readouts/null/2/raw_eigenvalues"
+        },
+        "n_floored_eigenvalues": 0,
+        "training_rows": 7200,
+        "class_counts": {
+          "__array__": "root/readouts/null/2/class_counts"
+        },
+        "equal_sample_weights": true
+      },
+      {
+        "class_means": {
+          "__array__": "root/readouts/null/3/class_means"
+        },
+        "covariance": {
+          "__array__": "root/readouts/null/3/covariance"
+        },
+        "cholesky": {
+          "__array__": "root/readouts/null/3/cholesky"
+        },
+        "logdet": -11.713953362035758,
+        "latent_mean": {
+          "__array__": "root/readouts/null/3/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/null/3/latent_scale"
+        },
+        "prior": {
+          "__array__": "root/readouts/null/3/prior"
+        },
+        "K": 1,
+        "shrinkage": 0.001734785055463655,
+        "eigenvalue_floor": 1e-08,
+        "raw_eigenvalues": {
+          "__array__": "root/readouts/null/3/raw_eigenvalues"
+        },
+        "n_floored_eigenvalues": 0,
+        "training_rows": 7200,
+        "class_counts": {
+          "__array__": "root/readouts/null/3/class_counts"
+        },
+        "equal_sample_weights": true
+      }
+    ],
+    "prior_content": 0.5
+  },
+  "thresholds": {
+    "__array__": "root/thresholds"
+  },
+  "calibration": [
+    {
+      "threshold": 0.042841109255925616,
+      "crossfit_baseline_fpr": 0.04986111111111111,
+      "baseline_samples": 7200,
+      "decision": "strict > threshold",
+      "quantile": 0.95,
+      "quantile_method": "higher"
+    },
+    {
+      "threshold": 6.116313092044798e-08,
+      "crossfit_baseline_fpr": 0.04986111111111111,
+      "baseline_samples": 7200,
+      "decision": "strict > threshold",
+      "quantile": 0.95,
+      "quantile_method": "higher"
+    },
+    {
+      "threshold": 9.008417818494084e-08,
+      "crossfit_baseline_fpr": 0.04986111111111111,
+      "baseline_samples": 7200,
+      "decision": "strict > threshold",
+      "quantile": 0.95,
+      "quantile_method": "higher"
+    },
+    {
+      "threshold": 1.2323740165502297e-07,
+      "crossfit_baseline_fpr": 0.04986111111111111,
+      "baseline_samples": 7200,
+      "decision": "strict > threshold",
+      "quantile": 0.95,
+      "quantile_method": "higher"
+    }
+  ],
+  "inner_audit": [
+    {
+      "inner_fold": 0,
+      "train_indices": {
+        "__array__": "root/inner_audit/0/train_indices"
+      },
+      "validation_indices": {
+        "__array__": "root/inner_audit/0/validation_indices"
+      }
+    },
+    {
+      "inner_fold": 1,
+      "train_indices": {
+        "__array__": "root/inner_audit/1/train_indices"
+      },
+      "validation_indices": {
+        "__array__": "root/inner_audit/1/validation_indices"
+      }
+    },
+    {
+      "inner_fold": 2,
+      "train_indices": {
+        "__array__": "root/inner_audit/2/train_indices"
+      },
+      "validation_indices": {
+        "__array__": "root/inner_audit/2/validation_indices"
+      }
+    },
+    {
+      "inner_fold": 3,
+      "train_indices": {
+        "__array__": "root/inner_audit/3/train_indices"
+      },
+      "validation_indices": {
+        "__array__": "root/inner_audit/3/validation_indices"
+      }
+    }
+  ],
+  "train_indices": {
+    "__array__": "root/train_indices"
+  },
+  "test_indices": {
+    "__array__": "root/test_indices"
+  }
+}

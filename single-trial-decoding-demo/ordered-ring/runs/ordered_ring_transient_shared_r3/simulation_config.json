@@ -1,0 +1,8 @@
+{
+  "name": "ordered_ring_transient_shared_r3",
+  "overlap": 0.0,
+  "position_geometry": "C[k]=[cos(2*pi*k/6),sin(2*pi*k/6)]; k=0..5 maps positions 1..6; zero-padded into unchanged QR blocks",
+  "true_template_rank": 2,
+  "inference_dimension": "Full K-1 categorical GLM; no forced rank-2 basis or readout",
+  "interpretation": "Simulation hypothesis, not empirical-data reanalysis"
+}

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<title id="title">From epochs to functional subspaces to single-trial probabilities</title>
+<desc id="desc">TG, GLM, decomposition and readouts use outer training data only. Frozen models predict held-out epochs without labels. OOF output preserves trial and time axes.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#64748b"/></marker></defs>
+<rect width="1200" height="660" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#0f172a">
+<text x="40" y="45" font-size="28" font-weight="bold" text-anchor="start">Epoch data → functional subspaces → single-trial decoding</text>
+<text x="40" y="83" font-size="19" font-weight="normal" text-anchor="start">Input: epoch [N, P, T] + labels [N, R] + explicit timing and outer-fold / group split</text>
+<text x="40" y="139" font-size="20" font-weight="bold" text-anchor="start">1  DECOMPOSITION + READOUT FITTING · OUTER TRAINING DATA ONLY</text>
+<rect x="40" y="165" width="220" height="132" rx="14" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="150.0" y="200" font-size="19" font-weight="bold" text-anchor="middle">Training epochs</text>
+<text x="150.0" y="229" font-size="19" font-weight="normal" text-anchor="middle">Training labels</text>
+<text x="150.0" y="258" font-size="19" font-weight="normal" text-anchor="middle">Timing configuration</text>
+<rect x="300" y="165" width="255" height="132" rx="14" fill="#e0f2fe" stroke="#cbd5e1"/>
+<text x="427.5" y="200" font-size="19" font-weight="bold" text-anchor="middle">TG + full-target GLM</text>
+<text x="427.5" y="229" font-size="19" font-weight="normal" text-anchor="middle">Inner-fold TG evidence</text>
+<text x="427.5" y="258" font-size="19" font-weight="normal" text-anchor="middle">Shared / rank-specific</text>
+<rect x="595" y="165" width="255" height="132" rx="14" fill="#e0f2fe" stroke="#cbd5e1"/>
+<text x="722.5" y="200" font-size="19" font-weight="bold" text-anchor="middle">Joint-soft subspaces</text>
+<text x="722.5" y="229" font-size="19" font-weight="normal" text-anchor="middle">1 shared Entry</text>
+<text x="722.5" y="258" font-size="19" font-weight="normal" text-anchor="middle">R private Rank spaces</text>
+<rect x="890" y="165" width="270" height="132" rx="14" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="1025.0" y="200" font-size="19" font-weight="bold" text-anchor="middle">Fit and freeze</text>
+<text x="1025.0" y="229" font-size="19" font-weight="normal" text-anchor="middle">Coordinate transform</text>
+<text x="1025.0" y="258" font-size="19" font-weight="normal" text-anchor="middle">Position readouts</text>
+<path d="M260,231 H298" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M555,231 H593" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M850,231 H888" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="40" y="337" font-size="18" font-weight="normal" text-anchor="start">Functional modules are defined by representation and generalization, not separate cell clusters.</text>
+<text x="40" y="398" font-size="20" font-weight="bold" text-anchor="start">2  SINGLE-TRIAL DECODING · HELD-OUT EPOCHS, NO LABEL INPUT</text>
+<rect x="40" y="425" width="260" height="111" rx="14" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="170.0" y="460" font-size="19" font-weight="bold" text-anchor="middle">Held-out epochs</text>
+<text x="170.0" y="489" font-size="19" font-weight="normal" text-anchor="middle">Every trial, every frame</text>
+<rect x="385" y="425" width="325" height="111" rx="14" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="547.5" y="460" font-size="19" font-weight="bold" text-anchor="middle">Apply frozen model</text>
+<text x="547.5" y="489" font-size="19" font-weight="normal" text-anchor="middle">Subspace coordinates → readout</text>
+<rect x="795" y="425" width="365" height="111" rx="14" fill="#fef3c7" stroke="#cbd5e1"/>
+<text x="977.5" y="460" font-size="19" font-weight="bold" text-anchor="middle">OOF position probabilities</text>
+<text x="977.5" y="489" font-size="19" font-weight="normal" text-anchor="middle">[R + 1, K, N, T]</text>
+<path d="M300,481 H382" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M710,481 H792" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M1025,297 V363 H760 V408 H548 V422" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="1042" y="361" font-size="16" font-weight="normal" text-anchor="start">Frozen</text>
+<text x="40" y="585" font-size="19" font-weight="normal" text-anchor="start">N = trials   P = neurons   T = times   R = ranks   K = locations</text>
+<text x="40" y="619" font-size="18" font-weight="normal" text-anchor="start">Join held-out predictions in original trial order. Test labels are used only afterward for scoring.</text>
+</g></svg>
+

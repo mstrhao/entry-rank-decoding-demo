@@ -1,0 +1,237 @@
+{
+  "readouts": [
+    {
+      "class_means": {
+        "__array__": "root/readouts/0/class_means"
+      },
+      "covariance": {
+        "__array__": "root/readouts/0/covariance"
+      },
+      "cholesky": {
+        "__array__": "root/readouts/0/cholesky"
+      },
+      "logdet": -1.6457056055810328,
+      "latent_mean": {
+        "__array__": "root/readouts/0/latent_mean"
+      },
+      "latent_scale": {
+        "__array__": "root/readouts/0/latent_scale"
+      },
+      "prior": {
+        "__array__": "root/readouts/0/prior"
+      },
+      "K": 6,
+      "shrinkage": 0.0012395067343811492,
+      "eigenvalue_floor": 1e-08,
+      "raw_eigenvalues": {
+        "__array__": "root/readouts/0/raw_eigenvalues"
+      },
+      "n_floored_eigenvalues": 0,
+      "training_rows": 17280,
+      "class_counts": {
+        "__array__": "root/readouts/0/class_counts"
+      },
+      "equal_sample_weights": true
+    },
+    {
+      "class_means": {
+        "__array__": "root/readouts/1/class_means"
+      },
+      "covariance": {
+        "__array__": "root/readouts/1/covariance"
+      },
+      "cholesky": {
+        "__array__": "root/readouts/1/cholesky"
+      },
+      "logdet": -4.85193408054716,
+      "latent_mean": {
+        "__array__": "root/readouts/1/latent_mean"
+      },
+      "latent_scale": {
+        "__array__": "root/readouts/1/latent_scale"
+      },
+      "prior": {
+        "__array__": "root/readouts/1/prior"
+      },
+      "K": 6,
+      "shrinkage": 0.0007130508693771905,
+      "eigenvalue_floor": 1e-08,
+      "raw_eigenvalues": {
+        "__array__": "root/readouts/1/raw_eigenvalues"
+      },
+      "n_floored_eigenvalues": 0,
+      "training_rows": 14400,
+      "class_counts": {
+        "__array__": "root/readouts/1/class_counts"
+      },
+      "equal_sample_weights": true
+    },
+    {
+      "class_means": {
+        "__array__": "root/readouts/2/class_means"
+      },
+      "covariance": {
+        "__array__": "root/readouts/2/covariance"
+      },
+      "cholesky": {
+        "__array__": "root/readouts/2/cholesky"
+      },
+      "logdet": -4.932214099950826,
+      "latent_mean": {
+        "__array__": "root/readouts/2/latent_mean"
+      },
+      "latent_scale": {
+        "__array__": "root/readouts/2/latent_scale"
+      },
+      "prior": {
+        "__array__": "root/readouts/2/prior"
+      },
+      "K": 6,
+      "shrinkage": 0.0007137193842643321,
+      "eigenvalue_floor": 1e-08,
+      "raw_eigenvalues": {
+        "__array__": "root/readouts/2/raw_eigenvalues"
+      },
+      "n_floored_eigenvalues": 0,
+      "training_rows": 14400,
+      "class_counts": {
+        "__array__": "root/readouts/2/class_counts"
+      },
+      "equal_sample_weights": true
+    },
+    {
+      "class_means": {
+        "__array__": "root/readouts/3/class_means"
+      },
+      "covariance": {
+        "__array__": "root/readouts/3/covariance"
+      },
+      "cholesky": {
+        "__array__": "root/readouts/3/cholesky"
+      },
+      "logdet": -5.267936292146329,
+      "latent_mean": {
+        "__array__": "root/readouts/3/latent_mean"
+      },
+      "latent_scale": {
+        "__array__": "root/readouts/3/latent_scale"
+      },
+      "prior": {
+        "__array__": "root/readouts/3/prior"
+      },
+      "K": 6,
+      "shrinkage": 0.0006939045190056738,
+      "eigenvalue_floor": 1e-08,
+      "raw_eigenvalues": {
+        "__array__": "root/readouts/3/raw_eigenvalues"
+      },
+      "n_floored_eigenvalues": 0,
+      "training_rows": 14400,
+      "class_counts": {
+        "__array__": "root/readouts/3/class_counts"
+      },
+      "equal_sample_weights": true
+    }
+  ],
+  "temperatures": {
+    "__array__": "root/temperatures"
+  },
+  "calibration": [
+    {
+      "temperature": 0.4627339311856666,
+      "optimizer_success": true,
+      "fallback_to_T1": false,
+      "bounds": [
+        0.05,
+        20.0
+      ],
+      "near_bound": false,
+      "inner_nll_before": 0.3191144061605394,
+      "inner_nll_after": 0.2429935901759006,
+      "rows": 17280
+    },
+    {
+      "temperature": 0.8366995723360944,
+      "optimizer_success": true,
+      "fallback_to_T1": false,
+      "bounds": [
+        0.05,
+        20.0
+      ],
+      "near_bound": false,
+      "inner_nll_before": 0.001233749944505858,
+      "inner_nll_after": 0.0011922496987542535,
+      "rows": 14400
+    },
+    {
+      "temperature": 1.282113481857966,
+      "optimizer_success": true,
+      "fallback_to_T1": false,
+      "bounds": [
+        0.05,
+        20.0
+      ],
+      "near_bound": false,
+      "inner_nll_before": 0.004917626294818283,
+      "inner_nll_after": 0.004648206860690876,
+      "rows": 14400
+    },
+    {
+      "temperature": 1.243814758312319,
+      "optimizer_success": true,
+      "fallback_to_T1": false,
+      "bounds": [
+        0.05,
+        20.0
+      ],
+      "near_bound": false,
+      "inner_nll_before": 0.003565656742003933,
+      "inner_nll_after": 0.0034187534886081796,
+      "rows": 14400
+    }
+  ],
+  "inner_audit": [
+    {
+      "inner_fold": 0,
+      "train_indices": {
+        "__array__": "root/inner_audit/0/train_indices"
+      },
+      "validation_indices": {
+        "__array__": "root/inner_audit/0/validation_indices"
+      }
+    },
+    {
+      "inner_fold": 1,
+      "train_indices": {
+        "__array__": "root/inner_audit/1/train_indices"
+      },
+      "validation_indices": {
+        "__array__": "root/inner_audit/1/validation_indices"
+      }
+    },
+    {
+      "inner_fold": 3,
+      "train_indices": {
+        "__array__": "root/inner_audit/2/train_indices"
+      },
+      "validation_indices": {
+        "__array__": "root/inner_audit/2/validation_indices"
+      }
+    },
+    {
+      "inner_fold": 4,
+      "train_indices": {
+        "__array__": "root/inner_audit/3/train_indices"
+      },
+      "validation_indices": {
+        "__array__": "root/inner_audit/3/validation_indices"
+      }
+    }
+  ],
+  "train_indices": {
+    "__array__": "root/train_indices"
+  },
+  "test_indices": {
+    "__array__": "root/test_indices"
+  }
+}

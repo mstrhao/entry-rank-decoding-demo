@@ -1,0 +1,10 @@
+{
+  "overlap": 0.0,
+  "noise_sd": 1.0,
+  "entry_amplitude": 1.5,
+  "rank_amplitude": 1.0,
+  "neurons": 60,
+  "name": "ordered_ring_transient_shared_r3",
+  "position_geometry": "C[k]=[cos(2*pi*k/6),sin(2*pi*k/6)]; k=0..5 maps positions 1..6; zero-padded into unchanged QR blocks",
+  "true_template_rank": 2
+}

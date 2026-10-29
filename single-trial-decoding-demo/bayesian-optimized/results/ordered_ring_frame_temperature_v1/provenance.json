@@ -1,0 +1,450 @@
+{
+  "method": "frame_matched_gaussian_temperature_v1",
+  "source_run": "ordered_ring_transient_shared_r3",
+  "source_sha256": {
+    "upstream/config.json": "01c1dbfb5911c418670582136bd2c37d814c26c449501419682b22ba4c443778",
+    "upstream/simulation_inputs.npz": "3a56645f1b59c33d485ce8210dacf34919e4421832d04943f446e37dd02029d9",
+    "baseline/comparison_oof.npz": "0431ec0d32c7c5548641926a8ea2193f8ee68b4d8521878660bf54f59351d746",
+    "upstream/fold_0.json": "a76e888cfac9794c000c3a693946a32a59118a00de616e15ead88425bde8d07a",
+    "upstream/fold_0.npz": "907e8a66ba44f2b47e59a14ce08dd6d33b9a6c704fd77d09576fdbd14dbed41c",
+    "upstream/fold_1.json": "4338be6e5c8888bf0413790f4bfe583f105c8c641b154af301b28ade3085e7d1",
+    "upstream/fold_1.npz": "621100c62f48a5bc476d3cf13eac2279847b8129a0eb53cf759105bc9d6c9306",
+    "upstream/fold_2.json": "ac199a88dc974725b521ee5bc100f69517934421be0b007b315266c7814b06b5",
+    "upstream/fold_2.npz": "457d369995a5fe9765182e2c26d22b616589873722582fb0f39f26afcf18504a",
+    "upstream/fold_3.json": "9eed429e6ad63f567af391de9ff30343feca6571e76e8034249d59b7c4c6fe69",
+    "upstream/fold_3.npz": "1c23eda30263d1488f4555f8a22d87a19956d9650d28c06e7f8826c9168a297d",
+    "upstream/fold_4.json": "5b5b96df41251a60a9248e534c03c877ddff4ff59ed867b1ad54891db3b001b1",
+    "upstream/fold_4.npz": "d3ab85a2850e2f091ba661c803022535b368af29b43830b8194701863540c3ec"
+  },
+  "source_unchanged": true,
+  "scripts_sha256": {
+    "run_calibrated.py": "9b01b6b57435d801303d50309b8d6c94621fd012c957979f09b0618b86977859",
+    "test_evaluation_calibrated.py": "682950c8b2246a73940c2c1bd9595b5fee723020ef99432aadaa285f7376b00b",
+    "noise_matched.py": "82320eea0beabeecc578a6acfe7996e3de61bb6f7542e023e9e63b709cab14f4",
+    "evaluate_optimized.py": "833ace81229a4befca81832bfc6f90bc7a5a7dc184e4f27dd26bd0025b6bfa11",
+    "calibrated_readout.py": "ca1ce5bc661e64c872916f362b54d20a262ee89d3981bb4aa738001c76714b69",
+    "evaluate_calibrated.py": "9a91b75cd624091e86bb34db13a19a11f0182f6d4a495c5844f61b414865d8d1",
+    "test_noise_matched.py": "1e199bd0df7df1d43bfc0fff758e19ee875e39b4e25cc603aa75fab99c7d0e0c",
+    "test_calibrated.py": "519f6a294dfbb88a9d47e0726a5d29cea5ed107ac21faa97cbde3800f47d2354",
+    "test_evaluation_optimized.py": "6f492e3548648d2a4c0d3b76b2172e03fbd8d5256b4418ca99572c9edc5c04ac",
+    "run_optimized.py": "962b8028baf658f1f203dbd6153cd344c9e9b404fc03782c8c62d64b2839ee64"
+  },
+  "source_commit": "7b9fac5fc2199a1859bf6a8c2f853653d463b3b3",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "fold_audit": [
+    {
+      "fold": 0,
+      "calibration": [
+        {
+          "temperature": 0.4605920154216564,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.3181734346691012,
+          "inner_nll_after": 0.24140699804498397,
+          "rows": 17280
+        },
+        {
+          "temperature": 0.8362954177388842,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.0011842713675870506,
+          "inner_nll_after": 0.0011451587968407397,
+          "rows": 14400
+        },
+        {
+          "temperature": 1.2958177086292975,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.004284635041065069,
+          "inner_nll_after": 0.00403435462164061,
+          "rows": 14400
+        },
+        {
+          "temperature": 1.038536024359854,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.0020513441104147642,
+          "inner_nll_after": 0.0020482452235224264,
+          "rows": 14400
+        }
+      ],
+      "temperatures": [
+        0.4605920154216564,
+        0.8362954177388842,
+        1.2958177086292975,
+        1.038536024359854
+      ],
+      "content_shrinkage": [
+        0.0012046977341063168,
+        0.0006832292068066593,
+        0.0007305663334915113,
+        0.0006963746318481825
+      ],
+      "training_rows": [
+        17280,
+        14400,
+        14400,
+        14400
+      ],
+      "n_floored_eigenvalues": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 1,
+      "calibration": [
+        {
+          "temperature": 0.4488766562292619,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.3166594819910644,
+          "inner_nll_after": 0.2369026876081317,
+          "rows": 17280
+        },
+        {
+          "temperature": 0.5497729870352281,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.0004964438824989418,
+          "inner_nll_after": 0.00031883222633177376,
+          "rows": 14400
+        },
+        {
+          "temperature": 1.158536058367109,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.0028212609033516907,
+          "inner_nll_after": 0.0027601122277033656,
+          "rows": 14400
+        },
+        {
+          "temperature": 1.2584072243036546,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.0027490668047117804,
+          "inner_nll_after": 0.002604899060143184,
+          "rows": 14400
+        }
+      ],
+      "temperatures": [
+        0.4488766562292619,
+        0.5497729870352281,
+        1.158536058367109,
+        1.2584072243036546
+      ],
+      "content_shrinkage": [
+        0.0012034000072900348,
+        0.0006898775792687746,
+        0.0007136197564219384,
+        0.0007692262883121817
+      ],
+      "training_rows": [
+        17280,
+        14400,
+        14400,
+        14400
+      ],
+      "n_floored_eigenvalues": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 2,
+      "calibration": [
+        {
+          "temperature": 0.4627339311856666,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.3191144061605394,
+          "inner_nll_after": 0.2429935901759006,
+          "rows": 17280
+        },
+        {
+          "temperature": 0.8366995723360944,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.001233749944505858,
+          "inner_nll_after": 0.0011922496987542535,
+          "rows": 14400
+        },
+        {
+          "temperature": 1.282113481857966,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.004917626294818283,
+          "inner_nll_after": 0.004648206860690876,
+          "rows": 14400
+        },
+        {
+          "temperature": 1.243814758312319,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.003565656742003933,
+          "inner_nll_after": 0.0034187534886081796,
+          "rows": 14400
+        }
+      ],
+      "temperatures": [
+        0.4627339311856666,
+        0.8366995723360944,
+        1.282113481857966,
+        1.243814758312319
+      ],
+      "content_shrinkage": [
+        0.0012395067343811492,
+        0.0007130508693771905,
+        0.0007137193842643321,
+        0.0006939045190056738
+      ],
+      "training_rows": [
+        17280,
+        14400,
+        14400,
+        14400
+      ],
+      "n_floored_eigenvalues": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 3,
+      "calibration": [
+        {
+          "temperature": 0.4576715838311501,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.3209986582577521,
+          "inner_nll_after": 0.2430746226528097,
+          "rows": 17280
+        },
+        {
+          "temperature": 1.0469868714340536,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.0016337457889718725,
+          "inner_nll_after": 0.0016297501600880874,
+          "rows": 14400
+        },
+        {
+          "temperature": 1.2197697898801056,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.002398377388795437,
+          "inner_nll_after": 0.0022974931520214534,
+          "rows": 14400
+        },
+        {
+          "temperature": 1.2037715237687872,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.00308547830451513,
+          "inner_nll_after": 0.0029853209777245295,
+          "rows": 14400
+        }
+      ],
+      "temperatures": [
+        0.4576715838311501,
+        1.0469868714340536,
+        1.2197697898801056,
+        1.2037715237687872
+      ],
+      "content_shrinkage": [
+        0.0012380719729844795,
+        0.0007068925149215531,
+        0.000719593646648114,
+        0.0007417028952035273
+      ],
+      "training_rows": [
+        17280,
+        14400,
+        14400,
+        14400
+      ],
+      "n_floored_eigenvalues": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 4,
+      "calibration": [
+        {
+          "temperature": 0.44709592873014214,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.31114627404935125,
+          "inner_nll_after": 0.2315084198506206,
+          "rows": 17280
+        },
+        {
+          "temperature": 0.7089590332688893,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.0006668182868787764,
+          "inner_nll_after": 0.0005848611705963317,
+          "rows": 14400
+        },
+        {
+          "temperature": 1.22891952117245,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.0031442599300711286,
+          "inner_nll_after": 0.0030216332762870563,
+          "rows": 14400
+        },
+        {
+          "temperature": 1.363348939496217,
+          "optimizer_success": true,
+          "fallback_to_T1": false,
+          "bounds": [
+            0.05,
+            20.0
+          ],
+          "near_bound": false,
+          "inner_nll_before": 0.0039374961376528635,
+          "inner_nll_after": 0.003602022443289029,
+          "rows": 14400
+        }
+      ],
+      "temperatures": [
+        0.44709592873014214,
+        0.7089590332688893,
+        1.22891952117245,
+        1.363348939496217
+      ],
+      "content_shrinkage": [
+        0.0012009149774964251,
+        0.0007160037215286018,
+        0.0007126521483353166,
+        0.0007451603287136811
+      ],
+      "training_rows": [
+        17280,
+        14400,
+        14400,
+        14400
+      ],
+      "n_floored_eigenvalues": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "frame_model_replay_max_logp_error": 4.263256414560601e-14,
+  "calibration": "4 whole-trial inner folds; readout-only cross-fit conditional on fixed outer-training supervised representation, NOT fully nested upstream validation. Original predefined class windows only; no presence/absence labels.",
+  "inference": "One positive scalar temperature per component per fold; six exclusive-location conditional probabilities; all times including prestimulus retained. No null class or time gate.",
+  "limitation": "Uniform six-location posterior does not identify no content versus equal coactivation or across-trial balancing; ideal centered cos/sin ring may cancel equal coactivation. Probabilities and signal magnitude do not prove imagination content."
+}

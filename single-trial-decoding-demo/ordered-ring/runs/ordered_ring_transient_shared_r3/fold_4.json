@@ -1,0 +1,524 @@
+{
+  "center": {
+    "__array__": "root/center"
+  },
+  "scale": {
+    "__array__": "root/scale"
+  },
+  "degenerate": {
+    "__array__": "root/degenerate"
+  },
+  "encoding": {
+    "B": {
+      "__array__": "root/encoding/B"
+    },
+    "beta": {
+      "__array__": "root/encoding/beta"
+    },
+    "design_columns": [
+      "intercept",
+      "target_1_helmert_1",
+      "target_1_helmert_2",
+      "target_1_helmert_3",
+      "target_1_helmert_4",
+      "target_1_helmert_5",
+      "target_2_helmert_1",
+      "target_2_helmert_2",
+      "target_2_helmert_3",
+      "target_2_helmert_4",
+      "target_2_helmert_5",
+      "target_3_helmert_1",
+      "target_3_helmert_2",
+      "target_3_helmert_3",
+      "target_3_helmert_4",
+      "target_3_helmert_5",
+      "trial_order"
+    ],
+    "class_counts": {
+      "__array__": "root/encoding/class_counts"
+    },
+    "identifiable_ranks": {
+      "__array__": "root/encoding/identifiable_ranks"
+    },
+    "nuisance_columns": [
+      {
+        "__array__": "root/encoding/nuisance_columns/0"
+      },
+      {
+        "__array__": "root/encoding/nuisance_columns/1"
+      },
+      {
+        "__array__": "root/encoding/nuisance_columns/2"
+      }
+    ],
+    "ridge": 0.001
+  },
+  "nested": {
+    "TG": {
+      "__array__": "root/nested/TG"
+    },
+    "hits": {
+      "__array__": "root/nested/hits"
+    },
+    "counts": {
+      "__array__": "root/nested/counts"
+    },
+    "audit": [
+      {
+        "inner_fold": 0,
+        "train_indices": {
+          "__array__": "root/nested/audit/0/train_indices"
+        },
+        "validation_indices": {
+          "__array__": "root/nested/audit/0/validation_indices"
+        },
+        "train_class_counts": {
+          "__array__": "root/nested/audit/0/train_class_counts"
+        },
+        "validation_class_counts": {
+          "__array__": "root/nested/audit/0/validation_class_counts"
+        },
+        "center": {
+          "__array__": "root/nested/audit/0/center"
+        },
+        "scale": {
+          "__array__": "root/nested/audit/0/scale"
+        },
+        "degenerate": {
+          "__array__": "root/nested/audit/0/degenerate"
+        },
+        "identifiable_ranks": {
+          "__array__": "root/nested/audit/0/identifiable_ranks"
+        },
+        "train_ids": {
+          "__array__": "root/nested/audit/0/train_ids"
+        },
+        "train_groups": {
+          "__array__": "root/nested/audit/0/train_groups"
+        },
+        "validation_ids": {
+          "__array__": "root/nested/audit/0/validation_ids"
+        },
+        "validation_groups": {
+          "__array__": "root/nested/audit/0/validation_groups"
+        }
+      },
+      {
+        "inner_fold": 1,
+        "train_indices": {
+          "__array__": "root/nested/audit/1/train_indices"
+        },
+        "validation_indices": {
+          "__array__": "root/nested/audit/1/validation_indices"
+        },
+        "train_class_counts": {
+          "__array__": "root/nested/audit/1/train_class_counts"
+        },
+        "validation_class_counts": {
+          "__array__": "root/nested/audit/1/validation_class_counts"
+        },
+        "center": {
+          "__array__": "root/nested/audit/1/center"
+        },
+        "scale": {
+          "__array__": "root/nested/audit/1/scale"
+        },
+        "degenerate": {
+          "__array__": "root/nested/audit/1/degenerate"
+        },
+        "identifiable_ranks": {
+          "__array__": "root/nested/audit/1/identifiable_ranks"
+        },
+        "train_ids": {
+          "__array__": "root/nested/audit/1/train_ids"
+        },
+        "train_groups": {
+          "__array__": "root/nested/audit/1/train_groups"
+        },
+        "validation_ids": {
+          "__array__": "root/nested/audit/1/validation_ids"
+        },
+        "validation_groups": {
+          "__array__": "root/nested/audit/1/validation_groups"
+        }
+      },
+      {
+        "inner_fold": 2,
+        "train_indices": {
+          "__array__": "root/nested/audit/2/train_indices"
+        },
+        "validation_indices": {
+          "__array__": "root/nested/audit/2/validation_indices"
+        },
+        "train_class_counts": {
+          "__array__": "root/nested/audit/2/train_class_counts"
+        },
+        "validation_class_counts": {
+          "__array__": "root/nested/audit/2/validation_class_counts"
+        },
+        "center": {
+          "__array__": "root/nested/audit/2/center"
+        },
+        "scale": {
+          "__array__": "root/nested/audit/2/scale"
+        },
+        "degenerate": {
+          "__array__": "root/nested/audit/2/degenerate"
+        },
+        "identifiable_ranks": {
+          "__array__": "root/nested/audit/2/identifiable_ranks"
+        },
+        "train_ids": {
+          "__array__": "root/nested/audit/2/train_ids"
+        },
+        "train_groups": {
+          "__array__": "root/nested/audit/2/train_groups"
+        },
+        "validation_ids": {
+          "__array__": "root/nested/audit/2/validation_ids"
+        },
+        "validation_groups": {
+          "__array__": "root/nested/audit/2/validation_groups"
+        }
+      },
+      {
+        "inner_fold": 3,
+        "train_indices": {
+          "__array__": "root/nested/audit/3/train_indices"
+        },
+        "validation_indices": {
+          "__array__": "root/nested/audit/3/validation_indices"
+        },
+        "train_class_counts": {
+          "__array__": "root/nested/audit/3/train_class_counts"
+        },
+        "validation_class_counts": {
+          "__array__": "root/nested/audit/3/validation_class_counts"
+        },
+        "center": {
+          "__array__": "root/nested/audit/3/center"
+        },
+        "scale": {
+          "__array__": "root/nested/audit/3/scale"
+        },
+        "degenerate": {
+          "__array__": "root/nested/audit/3/degenerate"
+        },
+        "identifiable_ranks": {
+          "__array__": "root/nested/audit/3/identifiable_ranks"
+        },
+        "train_ids": {
+          "__array__": "root/nested/audit/3/train_ids"
+        },
+        "train_groups": {
+          "__array__": "root/nested/audit/3/train_groups"
+        },
+        "validation_ids": {
+          "__array__": "root/nested/audit/3/validation_ids"
+        },
+        "validation_groups": {
+          "__array__": "root/nested/audit/3/validation_groups"
+        }
+      }
+    ],
+    "bin_times": {
+      "__array__": "root/nested/bin_times"
+    }
+  },
+  "pE": {
+    "__array__": "root/pE"
+  },
+  "pR": {
+    "__array__": "root/pR"
+  },
+  "joint": {
+    "templates": {
+      "__array__": "root/joint/templates"
+    },
+    "profiles": {
+      "__array__": "root/joint/profiles"
+    },
+    "a": {
+      "__array__": "root/joint/a"
+    },
+    "b": {
+      "__array__": "root/joint/b"
+    },
+    "objective_history": {
+      "__array__": "root/joint/objective_history"
+    },
+    "converged": true,
+    "optimizer_records": [
+      {
+        "iteration": 1,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 45,
+        "fun": 0.06095733985415072,
+        "status": 0
+      },
+      {
+        "iteration": 2,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 25,
+        "fun": 0.060748493212715145,
+        "status": 0
+      },
+      {
+        "iteration": 3,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 19,
+        "fun": 0.06073192103296333,
+        "status": 0
+      },
+      {
+        "iteration": 4,
+        "success": true,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 17,
+        "fun": 0.06073545717418215,
+        "status": 0
+      }
+    ],
+    "all_profile_optimizers_success": true
+  },
+  "bases": [
+    {
+      "__array__": "root/bases/0"
+    },
+    {
+      "__array__": "root/bases/1"
+    },
+    {
+      "__array__": "root/bases/2"
+    },
+    {
+      "__array__": "root/bases/3"
+    }
+  ],
+  "singular_values": [
+    {
+      "__array__": "root/singular_values/0"
+    },
+    {
+      "__array__": "root/singular_values/1"
+    },
+    {
+      "__array__": "root/singular_values/2"
+    },
+    {
+      "__array__": "root/singular_values/3"
+    }
+  ],
+  "cuts": {
+    "__array__": "root/cuts"
+  },
+  "A": {
+    "__array__": "root/A"
+  },
+  "readouts": [
+    {
+      "V": {
+        "__array__": "root/readouts/0/V"
+      },
+      "bias": {
+        "__array__": "root/readouts/0/bias"
+      },
+      "Winput": {
+        "__array__": "root/readouts/0/Winput"
+      },
+      "binput": {
+        "__array__": "root/readouts/0/binput"
+      },
+      "diagnostics": {
+        "zero_dimensional": false,
+        "converged": true,
+        "warnings": [],
+        "n_iter": [
+          31
+        ],
+        "estimator_params": {
+          "C": 1.0,
+          "class_weight": null,
+          "dual": false,
+          "fit_intercept": true,
+          "intercept_scaling": 1,
+          "l1_ratio": 0.0,
+          "max_iter": 2000,
+          "n_jobs": null,
+          "penalty": "deprecated",
+          "random_state": null,
+          "solver": "lbfgs",
+          "tol": 1e-06,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "latent_mean": {
+          "__array__": "root/readouts/0/diagnostics/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/0/diagnostics/latent_scale"
+        }
+      }
+    },
+    {
+      "V": {
+        "__array__": "root/readouts/1/V"
+      },
+      "bias": {
+        "__array__": "root/readouts/1/bias"
+      },
+      "Winput": {
+        "__array__": "root/readouts/1/Winput"
+      },
+      "binput": {
+        "__array__": "root/readouts/1/binput"
+      },
+      "diagnostics": {
+        "zero_dimensional": false,
+        "converged": true,
+        "warnings": [],
+        "n_iter": [
+          28
+        ],
+        "estimator_params": {
+          "C": 1.0,
+          "class_weight": null,
+          "dual": false,
+          "fit_intercept": true,
+          "intercept_scaling": 1,
+          "l1_ratio": 0.0,
+          "max_iter": 2000,
+          "n_jobs": null,
+          "penalty": "deprecated",
+          "random_state": null,
+          "solver": "lbfgs",
+          "tol": 1e-06,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "latent_mean": {
+          "__array__": "root/readouts/1/diagnostics/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/1/diagnostics/latent_scale"
+        }
+      }
+    },
+    {
+      "V": {
+        "__array__": "root/readouts/2/V"
+      },
+      "bias": {
+        "__array__": "root/readouts/2/bias"
+      },
+      "Winput": {
+        "__array__": "root/readouts/2/Winput"
+      },
+      "binput": {
+        "__array__": "root/readouts/2/binput"
+      },
+      "diagnostics": {
+        "zero_dimensional": false,
+        "converged": true,
+        "warnings": [],
+        "n_iter": [
+          34
+        ],
+        "estimator_params": {
+          "C": 1.0,
+          "class_weight": null,
+          "dual": false,
+          "fit_intercept": true,
+          "intercept_scaling": 1,
+          "l1_ratio": 0.0,
+          "max_iter": 2000,
+          "n_jobs": null,
+          "penalty": "deprecated",
+          "random_state": null,
+          "solver": "lbfgs",
+          "tol": 1e-06,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "latent_mean": {
+          "__array__": "root/readouts/2/diagnostics/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/2/diagnostics/latent_scale"
+        }
+      }
+    },
+    {
+      "V": {
+        "__array__": "root/readouts/3/V"
+      },
+      "bias": {
+        "__array__": "root/readouts/3/bias"
+      },
+      "Winput": {
+        "__array__": "root/readouts/3/Winput"
+      },
+      "binput": {
+        "__array__": "root/readouts/3/binput"
+      },
+      "diagnostics": {
+        "zero_dimensional": false,
+        "converged": true,
+        "warnings": [],
+        "n_iter": [
+          28
+        ],
+        "estimator_params": {
+          "C": 1.0,
+          "class_weight": null,
+          "dual": false,
+          "fit_intercept": true,
+          "intercept_scaling": 1,
+          "l1_ratio": 0.0,
+          "max_iter": 2000,
+          "n_jobs": null,
+          "penalty": "deprecated",
+          "random_state": null,
+          "solver": "lbfgs",
+          "tol": 1e-06,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "latent_mean": {
+          "__array__": "root/readouts/3/diagnostics/latent_mean"
+        },
+        "latent_scale": {
+          "__array__": "root/readouts/3/diagnostics/latent_scale"
+        }
+      }
+    }
+  ],
+  "train_ids": {
+    "__array__": "root/train_ids"
+  },
+  "test_ids": {
+    "__array__": "root/test_ids"
+  },
+  "train_groups": {
+    "__array__": "root/train_groups"
+  },
+  "test_groups": {
+    "__array__": "root/test_groups"
+  },
+  "outer_fold": 4,
+  "train_indices": {
+    "__array__": "root/train_indices"
+  },
+  "test_indices": {
+    "__array__": "root/test_indices"
+  },
+  "train_class_counts": {
+    "__array__": "root/train_class_counts"
+  },
+  "test_class_counts": {
+    "__array__": "root/test_class_counts"
+  }
+}

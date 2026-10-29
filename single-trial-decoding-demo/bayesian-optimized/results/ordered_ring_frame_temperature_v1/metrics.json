@@ -1,0 +1,573 @@
+{
+  "methods": {
+    "logistic": "M0 Logistic",
+    "mean_gaussian": "M1 Mean Gaussian",
+    "frame_gaussian": "M2 Frame Gaussian",
+    "calibrated_gaussian": "M2 + train-only temperature"
+  },
+  "shape": [
+    4,
+    6,
+    600,
+    180
+  ],
+  "windows": [
+    {
+      "name": "Entry / T1",
+      "component": 0,
+      "target": 1,
+      "window": [
+        1.2,
+        1.6
+      ],
+      "methods": {
+        "logistic": {
+          "accuracy": 0.9029166666666667,
+          "nll": 0.28171118087807556,
+          "brier": 0.13972717939345344,
+          "entropy": 0.4030625133167615,
+          "true_probability": 0.8260818275600165,
+          "balanced_accuracy": 0.9029166666666666,
+          "ece": 0.05463344215574317,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "mean_gaussian": {
+          "accuracy": 0.9094444444444444,
+          "nll": 0.5945581180715132,
+          "brier": 0.156541960113072,
+          "entropy": 0.051362039090287685,
+          "true_probability": 0.9065258913151392,
+          "balanced_accuracy": 0.9094444444444445,
+          "ece": 0.0691870422075618,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "frame_gaussian": {
+          "accuracy": 0.90125,
+          "nll": 0.3280613013103468,
+          "brier": 0.15668808454637287,
+          "entropy": 0.5320625491004057,
+          "true_probability": 0.787021267451229,
+          "balanced_accuracy": 0.9012500000000001,
+          "ece": 0.09663863612371952,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "calibrated_gaussian": {
+          "accuracy": 0.90125,
+          "nll": 0.25706183904236574,
+          "brier": 0.13310226685984816,
+          "entropy": 0.24262458180111007,
+          "true_probability": 0.8677732295563112,
+          "balanced_accuracy": 0.9012500000000001,
+          "ece": 0.013892627584395691,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        }
+      },
+      "calibrated_minus_frame": {
+        "balanced_accuracy": 0.0,
+        "accuracy": 0.0,
+        "nll": -0.07099946226798104,
+        "brier": -0.023585817686524707,
+        "ece": -0.08274600853932383,
+        "entropy": -0.28943796729929566,
+        "true_probability": 0.08075196210508218
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": -0.08164326822666079,
+          "upper": -0.06108396500286092,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": -0.027941339906093425,
+          "upper": -0.01965870965338682,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      }
+    },
+    {
+      "name": "Entry / T2",
+      "component": 0,
+      "target": 2,
+      "window": [
+        2.5,
+        2.9
+      ],
+      "methods": {
+        "logistic": {
+          "accuracy": 0.903611111111111,
+          "nll": 0.2798798203017879,
+          "brier": 0.14084442613409032,
+          "entropy": 0.40947441395368417,
+          "true_probability": 0.8236831647398678,
+          "balanced_accuracy": 0.9036111111111111,
+          "ece": 0.05833495577084582,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "mean_gaussian": {
+          "accuracy": 0.9040277777777778,
+          "nll": 0.5278007828993052,
+          "brier": 0.160337031333094,
+          "entropy": 0.056825902206340366,
+          "true_probability": 0.9028758075748857,
+          "balanced_accuracy": 0.9040277777777779,
+          "ece": 0.07222519295872999,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "frame_gaussian": {
+          "accuracy": 0.9008333333333334,
+          "nll": 0.32895733547873895,
+          "brier": 0.15878537356547648,
+          "entropy": 0.5388054612878105,
+          "true_probability": 0.7842151019066327,
+          "balanced_accuracy": 0.9008333333333333,
+          "ece": 0.0998697178685465,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "calibrated_gaussian": {
+          "accuracy": 0.9008333333333334,
+          "nll": 0.2505718765818406,
+          "brier": 0.13411637078959437,
+          "entropy": 0.2498248971678575,
+          "true_probability": 0.8649406945927599,
+          "balanced_accuracy": 0.9008333333333333,
+          "ece": 0.01056855131424776,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        }
+      },
+      "calibrated_minus_frame": {
+        "balanced_accuracy": 0.0,
+        "accuracy": 0.0,
+        "nll": -0.07838545889689835,
+        "brier": -0.024669002775882104,
+        "ece": -0.08930116655429873,
+        "entropy": -0.288980564119953,
+        "true_probability": 0.08072559268612722
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": -0.08689399388786771,
+          "upper": -0.06866396739209571,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": -0.028823973385635956,
+          "upper": -0.020526174717236875,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      }
+    },
+    {
+      "name": "Entry / T3",
+      "component": 0,
+      "target": 3,
+      "window": [
+        3.8,
+        4.2
+      ],
+      "methods": {
+        "logistic": {
+          "accuracy": 0.907638888888889,
+          "nll": 0.26889032160151377,
+          "brier": 0.13495110577514582,
+          "entropy": 0.3981148464439517,
+          "true_probability": 0.82908379844378,
+          "balanced_accuracy": 0.907638888888889,
+          "ece": 0.058568714785259504,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "mean_gaussian": {
+          "accuracy": 0.909861111111111,
+          "nll": 0.5233888806950915,
+          "brier": 0.15041959738590377,
+          "entropy": 0.05367397666565833,
+          "true_probability": 0.908853927199975,
+          "balanced_accuracy": 0.9098611111111111,
+          "ece": 0.06789659251249006,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "frame_gaussian": {
+          "accuracy": 0.9061111111111111,
+          "nll": 0.3176116536019859,
+          "brier": 0.1530743504282607,
+          "entropy": 0.5292653249717737,
+          "true_probability": 0.788917318653127,
+          "balanced_accuracy": 0.9061111111111111,
+          "ece": 0.10149818684555349,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        },
+        "calibrated_gaussian": {
+          "accuracy": 0.9061111111111111,
+          "nll": 0.23739474032223862,
+          "brier": 0.12765759366105356,
+          "entropy": 0.24114387203591203,
+          "true_probability": 0.8701102251517137,
+          "balanced_accuracy": 0.9061111111111111,
+          "ece": 0.008324995785647524,
+          "n_trials": 600,
+          "n_frames": 12,
+          "n_observations": 7200
+        }
+      },
+      "calibrated_minus_frame": {
+        "balanced_accuracy": 0.0,
+        "accuracy": 0.0,
+        "nll": -0.08021691327974728,
+        "brier": -0.025416756767207144,
+        "ece": -0.09317319105990597,
+        "entropy": -0.28812145293586167,
+        "true_probability": 0.08119290649858668
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": -0.08855943375211464,
+          "upper": -0.0709061785130196,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": -0.029434661725753212,
+          "upper": -0.021385358653954155,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      }
+    },
+    {
+      "name": "Rank / T1",
+      "component": 1,
+      "target": 1,
+      "window": [
+        4.5,
+        5.5
+      ],
+      "methods": {
+        "logistic": {
+          "accuracy": 0.9957777777777779,
+          "nll": 0.13647333764583583,
+          "brier": 0.039632383214348595,
+          "entropy": 0.40018170246840606,
+          "true_probability": 0.8787311415371349,
+          "balanced_accuracy": 0.9957777777777777,
+          "ece": 0.11629354697340306,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "mean_gaussian": {
+          "accuracy": 0.9995,
+          "nll": 0.0012496094100191246,
+          "brier": 0.0006749897777529973,
+          "entropy": 0.0006800125993340024,
+          "true_probability": 0.9994707311234172,
+          "balanced_accuracy": 0.9994999999999999,
+          "ece": 0.00029618062310083785,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "frame_gaussian": {
+          "accuracy": 0.9995555555555555,
+          "nll": 0.0011810242273574982,
+          "brier": 0.0006391802993767398,
+          "entropy": 0.0017772936726206468,
+          "true_probability": 0.9992216482258527,
+          "balanced_accuracy": 0.9995555555555556,
+          "ece": 0.00022742117101084194,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "calibrated_gaussian": {
+          "accuracy": 0.9995555555555555,
+          "nll": 0.001311075340600719,
+          "brier": 0.000681820714266674,
+          "entropy": 0.0011231660084349184,
+          "true_probability": 0.9993675587568259,
+          "balanced_accuracy": 0.9995555555555556,
+          "ece": 0.00014694890714740878,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        }
+      },
+      "calibrated_minus_frame": {
+        "balanced_accuracy": 0.0,
+        "accuracy": 0.0,
+        "nll": 0.00013005111324322074,
+        "brier": 4.264041488993419e-05,
+        "ece": -8.047226386343316e-05,
+        "entropy": -0.0006541276641857283,
+        "true_probability": 0.0001459105309732367
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": -0.0001670555351178717,
+          "upper": 0.0006067822059462089,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": -3.912650170022855e-05,
+          "upper": 0.00014512666005202086,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      }
+    },
+    {
+      "name": "Rank / T2",
+      "component": 2,
+      "target": 2,
+      "window": [
+        4.5,
+        5.5
+      ],
+      "methods": {
+        "logistic": {
+          "accuracy": 0.9953888888888889,
+          "nll": 0.13988483188626086,
+          "brier": 0.04094567396020415,
+          "entropy": 0.40824178773813896,
+          "true_probability": 0.8758014270103981,
+          "balanced_accuracy": 0.9953888888888889,
+          "ece": 0.11879389620321783,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "mean_gaussian": {
+          "accuracy": 0.9990000000000001,
+          "nll": 0.004994654889379666,
+          "brier": 0.0017899949013188239,
+          "entropy": 0.000888946897013425,
+          "true_probability": 0.998849628128465,
+          "balanced_accuracy": 0.999,
+          "ece": 0.0007197747269395725,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "frame_gaussian": {
+          "accuracy": 0.9991111111111112,
+          "nll": 0.003429863369814342,
+          "brier": 0.001730802960384166,
+          "entropy": 0.0022914563828940783,
+          "true_probability": 0.9985235749835601,
+          "balanced_accuracy": 0.9991111111111112,
+          "ece": 0.000569144663482909,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "calibrated_gaussian": {
+          "accuracy": 0.9991111111111112,
+          "nll": 0.0033604441428857906,
+          "brier": 0.0017459209978324811,
+          "entropy": 0.003541485255228544,
+          "true_probability": 0.9982279905648713,
+          "balanced_accuracy": 0.9991111111111112,
+          "ece": 0.0005272573230249087,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        }
+      },
+      "calibrated_minus_frame": {
+        "balanced_accuracy": 0.0,
+        "accuracy": 0.0,
+        "nll": -6.941922692855129e-05,
+        "brier": 1.5118037448315011e-05,
+        "ece": -4.1887340458000226e-05,
+        "entropy": 0.0012500288723344658,
+        "true_probability": -0.00029558441868882124
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": -0.0004262228514210005,
+          "upper": 0.00022224070010751096,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": -4.623993787354421e-05,
+          "upper": 7.310116631450209e-05,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      }
+    },
+    {
+      "name": "Rank / T3",
+      "component": 3,
+      "target": 3,
+      "window": [
+        4.5,
+        5.5
+      ],
+      "methods": {
+        "logistic": {
+          "accuracy": 0.9945555555555555,
+          "nll": 0.14190689995516317,
+          "brier": 0.04220247749454847,
+          "entropy": 0.41005031536757097,
+          "true_probability": 0.8743046521005874,
+          "balanced_accuracy": 0.9945555555555555,
+          "ece": 0.11943000476393607,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "mean_gaussian": {
+          "accuracy": 0.9986666666666667,
+          "nll": 0.005534956269424517,
+          "brier": 0.0023548534691875656,
+          "entropy": 0.0010804212694176698,
+          "true_probability": 0.9985008988182998,
+          "balanced_accuracy": 0.9986666666666668,
+          "ece": 0.0010101334321326232,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "frame_gaussian": {
+          "accuracy": 0.9987222222222223,
+          "nll": 0.003902611192302302,
+          "brier": 0.0021816077126054836,
+          "entropy": 0.002309605966908128,
+          "true_probability": 0.9982810592536081,
+          "balanced_accuracy": 0.9987222222222222,
+          "ece": 0.0006209893812914714,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        },
+        "calibrated_gaussian": {
+          "accuracy": 0.9987222222222223,
+          "nll": 0.003927510971707699,
+          "brier": 0.0021893646114318566,
+          "entropy": 0.003327213232353661,
+          "true_probability": 0.9980456861959637,
+          "balanced_accuracy": 0.9987222222222222,
+          "ece": 0.0004369980236862122,
+          "n_trials": 600,
+          "n_frames": 30,
+          "n_observations": 18000
+        }
+      },
+      "calibrated_minus_frame": {
+        "balanced_accuracy": 0.0,
+        "accuracy": 0.0,
+        "nll": 2.4899779405397095e-05,
+        "brier": 7.756898826372961e-06,
+        "ece": -0.00018399135760525925,
+        "entropy": 0.001017607265445533,
+        "true_probability": -0.00023537305764442795
+      },
+      "paired_trial_bootstrap_95": {
+        "accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "nll": {
+          "lower": -0.0002578098260679486,
+          "upper": 0.00021642203925373112,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "lower": -3.980421686553739e-05,
+          "upper": 4.9821499907975546e-05,
+          "valid_replicates": 1000
+        },
+        "balanced_accuracy": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "valid_replicates": 1000
+        },
+        "replicates_missing_class": 0
+      }
+    }
+  ],
+  "definitions": {
+    "scope": "All four outputs are conditional probabilities over the SAME exclusive six-location category set. No null class, no source-gain masks, no presence threshold, no prestimulus suppression.",
+    "scoring": "Original six prespecified Entry/own-Rank windows; per-frame scores computed before trial/time averaging; no window-averaged posterior scoring.",
+    "nll": "Negative true-class log posterior, natural-log units, direct log-domain values without clipping.",
+    "brier": "Mean sum over six classes of squared probability error, range 0..2.",
+    "calibration": "Top-label ECE with 10 fixed equal-width confidence bins; last includes 1; counts in reliability.csv. This is calibration under the specified class problem, not animal confidence or content presence.",
+    "temperature": "One positive scalar temperature per component and outer fold, fitted only on inner-readout-OOF original-window training data, not held-out outer predictions. Readout-only crossfit conditional on fixed upstream; not fully nested upstream refitting. Positive scalar temperature preserves each argmax.",
+    "bootstrap": "1000 whole-trial paired resamples, seed2026; same draws for both methods and all six windows. Percentile95% interval for calibrated-minus-frame conditional on fixed OOF models/simulation, not retraining or across-animal inference; no iid-frame significance.",
+    "interpretation": "Uniform probabilities do not establish absence. Sharp probabilities do not prove real or imagined content. Six mutually exclusive classes cannot identify simultaneous coactivation of multiple locations.",
+    "display": "Fixed original trial0, known outer fold4; true labels for display only. Full epoch including prestimulus retained. Heatmaps use .2\u20131; <.2 bottom color, values unchanged. Entropy shown over all times is descriptive, not an absence detector."
+  }
+}

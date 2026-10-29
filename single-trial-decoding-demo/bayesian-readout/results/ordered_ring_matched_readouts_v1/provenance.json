@@ -1,0 +1,227 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "method": "gaussian_plugin_bayes_lw_v1",
+  "source_run": "ordered_ring_transient_shared_r3",
+  "source_file_sha256": {
+    "config.json": "01c1dbfb5911c418670582136bd2c37d814c26c449501419682b22ba4c443778",
+    "simulation_inputs.npz": "3a56645f1b59c33d485ce8210dacf34919e4421832d04943f446e37dd02029d9",
+    "oof.npz": "f68a59ebcfee48f767b0c6edeff271c4888c4bfd98cc1c6e9d243273eb1973ae",
+    "fold_0.json": "a76e888cfac9794c000c3a693946a32a59118a00de616e15ead88425bde8d07a",
+    "fold_0.npz": "907e8a66ba44f2b47e59a14ce08dd6d33b9a6c704fd77d09576fdbd14dbed41c",
+    "fold_1.json": "4338be6e5c8888bf0413790f4bfe583f105c8c641b154af301b28ade3085e7d1",
+    "fold_1.npz": "621100c62f48a5bc476d3cf13eac2279847b8129a0eb53cf759105bc9d6c9306",
+    "fold_2.json": "ac199a88dc974725b521ee5bc100f69517934421be0b007b315266c7814b06b5",
+    "fold_2.npz": "457d369995a5fe9765182e2c26d22b616589873722582fb0f39f26afcf18504a",
+    "fold_3.json": "9eed429e6ad63f567af391de9ff30343feca6571e76e8034249d59b7c4c6fe69",
+    "fold_3.npz": "1c23eda30263d1488f4555f8a22d87a19956d9650d28c06e7f8826c9168a297d",
+    "fold_4.json": "5b5b96df41251a60a9248e534c03c877ddff4ff59ed867b1ad54891db3b001b1",
+    "fold_4.npz": "d3ab85a2850e2f091ba661c803022535b368af29b43830b8194701863540c3ec"
+  },
+  "source_unchanged_after_comparison": true,
+  "script_sha256": {
+    "evaluate_comparison.py": "10da688aadace0d8eb102a8f793d7fceee138c89e48bcece326159cffc6953c0",
+    "test_gaussian.py": "c32e6286b2f1d43ac0e3a61f788801fe14edbd3a60cd8c7e40ad7bbd1885a694",
+    "run_comparison.py": "4355cde9e3ee2251ce6d1beee79e1b14b21763b643d3c2de22f39faaed4751b2",
+    "test_evaluation.py": "2be26a3691580135c88ea281bb070bb14b5a31fefddee59551d04f2d141cf178",
+    "gaussian_readout.py": "e30f5471c65e43b71ae2c9fc8fef43804fbf3323862d8d2f9c35c46dc67eeea2"
+  },
+  "fold_audit": [
+    {
+      "fold": 0,
+      "train_trials": 480,
+      "test_trials": 120,
+      "baseline_replay_max_error": 0.0,
+      "component_training_rows": [
+        1440,
+        480,
+        480,
+        480
+      ],
+      "equal_weights": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "shrinkage": [
+        0.007128466036110779,
+        0.01872567952237337,
+        0.02117009573259439,
+        0.019256681065962733
+      ],
+      "n_floored_eigenvalues": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_raw_covariance_eigenvalue": [
+        0.029216426231666502,
+        0.023552300884149724,
+        0.025118843669123356,
+        0.02481744249990149
+      ]
+    },
+    {
+      "fold": 1,
+      "train_trials": 480,
+      "test_trials": 120,
+      "baseline_replay_max_error": 0.0,
+      "component_training_rows": [
+        1440,
+        480,
+        480,
+        480
+      ],
+      "equal_weights": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "shrinkage": [
+        0.007215764525122561,
+        0.020074578008945732,
+        0.019550337042670677,
+        0.02168954709201842
+      ],
+      "n_floored_eigenvalues": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_raw_covariance_eigenvalue": [
+        0.028814409469618312,
+        0.02378076883862739,
+        0.024197875603188448,
+        0.0257644069992867
+      ]
+    },
+    {
+      "fold": 2,
+      "train_trials": 480,
+      "test_trials": 120,
+      "baseline_replay_max_error": 0.0,
+      "component_training_rows": [
+        1440,
+        480,
+        480,
+        480
+      ],
+      "equal_weights": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "shrinkage": [
+        0.007484192607599169,
+        0.021567112921182158,
+        0.019653807053810673,
+        0.01885358021121394
+      ],
+      "n_floored_eigenvalues": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_raw_covariance_eigenvalue": [
+        0.029440984363530022,
+        0.02638159200994861,
+        0.02410796117710826,
+        0.02425112371714649
+      ]
+    },
+    {
+      "fold": 3,
+      "train_trials": 480,
+      "test_trials": 120,
+      "baseline_replay_max_error": 0.0,
+      "component_training_rows": [
+        1440,
+        480,
+        480,
+        480
+      ],
+      "equal_weights": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "shrinkage": [
+        0.007338258168418499,
+        0.019115530366519275,
+        0.01956869311111527,
+        0.020743455957191872
+      ],
+      "n_floored_eigenvalues": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_raw_covariance_eigenvalue": [
+        0.028324150493682327,
+        0.02397144022909558,
+        0.02400297972793506,
+        0.025068851976246465
+      ]
+    },
+    {
+      "fold": 4,
+      "train_trials": 480,
+      "test_trials": 120,
+      "baseline_replay_max_error": 0.0,
+      "component_training_rows": [
+        1440,
+        480,
+        480,
+        480
+      ],
+      "equal_weights": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "shrinkage": [
+        0.007319300342954214,
+        0.020175031010934152,
+        0.020359232701262192,
+        0.02131941526574297
+      ],
+      "n_floored_eigenvalues": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_raw_covariance_eigenvalue": [
+        0.027882238215416813,
+        0.02428790234276545,
+        0.023699455373036873,
+        0.025719733332289767
+      ]
+    }
+  ],
+  "prior": [
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.16666666666666666
+  ],
+  "likelihood": "Training-window-mean class Gaussian; shared LedoitWolf pooled within-class residual covariance; same latent scaler as logistic",
+  "inference": "Plug-in class posterior; no integration over parameters; no test calibration; same per-frame upstream coordinates",
+  "feature_scale_mismatch": "Both methods train on window means but predict single frames. Gaussian covariance of means is not a frame-noise model; calibration may worsen.",
+  "source_inference_commit": "779a6d021aba8095264d6e2880e5abcb4da82029"
+}

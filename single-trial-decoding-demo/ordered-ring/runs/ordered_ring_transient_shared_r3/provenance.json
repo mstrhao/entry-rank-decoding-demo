@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "matplotlib": "3.10.8",
+  "source_sha256": "15ab81e17b13676b83d81e631bd19e21af9a7df60bef3f092bc6bf89daa0ce95",
+  "control": "positive",
+  "threads": 1,
+  "input_sha256": {
+    "epochs": "0c364b6008b7a0eab80b98e15b887d1b1a9490cbf87ed312ca137a8ffe5a09ff",
+    "target_labels": "fe6aa128f9eef2f3cfeb3dd4ed6dbec7403e07f4ed4af78c3792204fe91ae567"
+  },
+  "caveat": "Softmax outputs are not Bayesian posterior or demonstrated calibrated probabilities.",
+  "git_commit": null
+}
